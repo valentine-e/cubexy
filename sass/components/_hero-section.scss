@@ -1,7 +1,7 @@
 .hero__section {
   position: relative;
   z-index: 1;
-  padding: 10% 0;
+  padding: 10% 0 20%;
 }
 
 .hero__content {
@@ -46,23 +46,24 @@
   }
 }
 
+.models__secrtion {
+  margin-top: 90px;
+}
+
 .models__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .models__item {
-  width: 25%;
+  width: 50%;
+  padding: 40px;
 }
 
 .models__thumb {
-  height: 170px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 45px;
-
-  // transition: transform var(--timing-function);
 }
 
 .models__text {
@@ -71,9 +72,72 @@
   margin-bottom: 0;
 }
 
-.models__item:hover > .models__thumb {
-  transform: scale(1.1);
-  transition: transform var(--timing-function);
+.models-label {
+  /* Frame 1 */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 24px;
+  gap: 10px;
+
+  border: 2px solid #d9d9d9;
+  border-radius: 80px;
+
+  font-size: 24px;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.models-info li {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--primary-text-color);
+}
+
+.models-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.models__list > :nth-child(1) {
+  position: relative;
+}
+
+.models__list > :nth-child(1):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0px;
+  height: 95%;
+  width: 2px;
+  background-color: var(--light-grey-color);
+}
+
+.models__list > :nth-child(3) {
+  border-right: 2px solid var(--light-grey-color);
+  border-top: 2px solid var(--light-grey-color);
+}
+
+.models__list > :nth-child(4) {
+  position: relative;
+}
+
+.models__list > :nth-child(4):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 96%;
+  height: 2px;
+  background: var(--light-grey-color);
+}
+
+.models-section .primary-button {
+  margin: 40px auto 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -130,9 +194,5 @@
 
   .models__thumb img {
     width: 110px;
-  }
-
-  .models__thumb--size img {
-    width: 140px;
   }
 }
