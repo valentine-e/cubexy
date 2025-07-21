@@ -1,0 +1,145 @@
+.use__section {
+  padding: calc(5% + 90px) 0 120px;
+}
+
+.use__title {
+  margin-bottom: 30px;
+}
+
+.use__description {
+  font-size: 20px;
+
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #232c3d;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.tab-button {
+  white-space: nowrap;
+  border: none;
+  box-sizing: border-box;
+  background-color: var(--primary-background-color);
+  margin-bottom: 0;
+  color: var(--primary-text-color);
+  text-align: left;
+  padding-bottom: 10px;
+  transition: color var(--timing-function), border var(--timing-function);
+
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  color: var(--accent-color);
+}
+
+.tab-button.active {
+  color: var(--accent-color);
+  border-bottom: 3px solid var(--accent-color);
+  margin-bottom: -3px;
+}
+
+.content {
+  display: none;
+  padding: 0 0 30px;
+}
+
+.use__content {
+  min-height: 400px;
+  display: flex;
+  gap: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content.active {
+  display: block;
+}
+
+.use__subtitle {
+  margin-bottom: 30px;
+}
+
+.use__image {
+  flex-shrink: 0;
+  position: relative;
+  width: 50%;
+}
+
+.use__image-1 {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.use__image-2 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // transition: transform var(--timing-function);
+}
+
+.use__image:hover .use__image-2 {
+  animation: var(--image-animation-1);
+  // transform: scale(1.03);
+}
+
+// .use__image:hover .use__image-1 {
+//   animation: var(--image-animation-1);
+// }
+
+@media screen and (min-width: 1024px) {
+  .use__accordion {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .use__description {
+    margin-bottom: 30px;
+  }
+
+  .buttonWrapper,
+  .contentWrapper {
+    display: none;
+  }
+
+  .use__section .section-subtitle {
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+  }
+
+  .use__accordion {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .use__section {
+    padding: calc(5% + 60px) 0 120px;
+  }
+
+  .use__description {
+    text-align: left;
+  }
+
+  .use__description {
+    font-size: 18px;
+
+    line-height: 1.25;
+  }
+}

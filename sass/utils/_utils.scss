@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: var(--primary-background-color);
+  font-family: "Ubuntu Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.site-wrapper {
+  overflow-x: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1460px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+:root {
+  --accent-color: #5980e1;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #253141;
+  --button-bcg-color: #255f87;
+
+  --primary-text-color: #333333;
+  --white-color: #fff;
+
+  --primary-font: Montserrat, sans-serif;
+
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --buttons-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+    0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1), 8px 16px 16px rgba(0, 0, 0, 0.15),
+    8px 32px 32px rgba(0, 0, 0, 0.15);
+
+  --image-animation-1: heartbeat 1.5s both;
+}

@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <style>
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <!-- Header -->
+  <div class="site-wrapper">
+    <header id="header" class="page-header">
+      <div>
+        <div class="container header__container">
+          <nav class="main-nav">
+            <a class="header__logo" href="./index.html">
+              <img class="" src="./images/cubexy_logo.svg" alt="" />
+            </a>
+            <a class="header__logo--mobile" href="./index.html">
+              <img class="header__logo--width" src="./images/cubexy_logo.svg" alt="" />
+            </a>
+            <button class="header__button" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="header__button--size" width="35" height="35" preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 15 15">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1h-12ZM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Zm0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <!-- button  -->
+            <ul class="site-nav" data-menu>
+              <button class="header__button header__button--close" aria-expanded="false" aria-controls="mobile-menu"
+                data-menu-button>
+                <svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M20 20L4 4m16 0L4 20" />
+                </svg>
+              </button>
+              <li>
+                <a class=" site-nav__link" href="#integrations">Our Models </a>
+              </li>
+              <li>
+                <a class=" site-nav__link" href="#tariff-plans">How It Works</a>
+              </li>
+              <li>
+                <a class=" site-nav__link" href="#faq">About</a>
+              </li>
+              <li>
+                <a class=" site-nav__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero__section">
+      <div class="container">
+        <div class="hero__content ">
+          <h1 id="hero-section" class="hero__title"> Add Value to your property with Cubexy! </h1>
+          <p class="main-text hero__text"> Affordable, Easy-to-Install Accessory Dwelling Units – Designed to Fit Your
+            Space Perfectly and Enhance Your Lifestyle!</p>
+          <div class="hero__buttons">
+            <a class="primary-button " href="#tariff-plans">Browse Models</a>
+            <a class="primary-button primary-button--white" href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image"><img src="./images/hero-image.png" alt="model illustration" width="600" /></div>
+    </section>
+    <section class="models-section">
+      <h2 class="section-title">Our Models</h2>
+      <ul class="models__list">
+        <li class="models__item">
+          <div class="models__thumb models__thumb--size">
+            <img width="180" src="./images/model-1.png" alt="models illustration" />
+          </div>
+          <p class="section-subtitle models__text"> Numerous crypto currencies available </p>
+        </li>
+        <li class="models__item">
+          <div class="models__thumb">
+            <img width="120" src="./images/model-2.png" alt="models illustration" />
+          </div>
+          <p class="section-subtitle models__text">Free</p>
+        </li>
+        <li class="models__item">
+          <div class="models__thumb">
+            <img width="130" src="./images/model-3.png" alt="models illustration" />
+          </div>
+          <p class="section-subtitle models__text">Highly secure</p>
+        </li>
+        <li class="models__item">
+          <div class="models__thumb">
+            <img width="120" src="./images/model-4.png" alt="models illustration" />
+          </div>
+          <p class="section-subtitle models__text"> Private<br />and confidential </p>
+        </li>
+      </ul>
+    </section>
+    <div>
+      <p></p>
+    </div>
+    <!-- Simply Process  -->
+    <section class="process__section">
+      <div class=" bcg-thumb--process">
+        <div class="container process__container">
+          <h2 class="section-title process__title">Simply Process</h2>
+          <div class="skew-container">
+            <div class="unskew-container">
+              <div class="process__dots--white">
+                <div class="process__dots-gradient"></div>
+              </div>
+            </div>
+            <ul class="process__list">
+              <li class="process__item">
+                <span class="process__index">1</span>
+                <h2 class="section-subtitle process__subtitle"> Install and Launch Your SHKeepper </h2>
+                <p class="main-text process__description"> Basically, you need to install it into Kubernetes, Doker, or
+                  cloud. Raise all needed cryptocurrency demons at your convenience </p>
+              </li>
+              <li class="process__item">
+                <span class="process__index">2</span>
+                <h2 class="section-subtitle process__subtitle"> SHKeepper Discovers Different Wallets </h2>
+                <p class="main-text process__description"> SHKeepper automatically detects all of your crypto wallets.
+                  It can make payments to a crypto stock </p>
+              </li>
+              <li class="process__item">
+                <span class="process__index">3</span>
+                <h2 class="section-subtitle process__subtitle"> Accept and Make Payments w/ SHKeepper </h2>
+                <p class="main-text process__description"> The pleasure and convenience are truly yours </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="unskew-container">
+          <a class="primary-button process__button" href="#how-cubexy-works">Learn more</a>
+        </div>
+      </div>
+    </section>
+    <!-- How to use cubexy  -->
+    <section class="use__section">
+      <div class="container use__wrapper">
+        <h2 id="how-to-use" class="section-title use__title"> How to Use cubexy? </h2>
+        <p class="main-text use__description"> cubexy is needed to integrate this payment service with other systems
+          efficiently. </p>
+        <div class="buttonWrapper">
+          <button class="section-subtitle tab-button active" data-id="walet"> Your own wallet </button>
+          <button class="section-subtitle tab-button" data-id="wordpress"> Integrate with <br /> Wordpress </button>
+          <button class="section-subtitle tab-button" data-id="cms"> Integrate with <br /> popular CMS </button>
+          <button class="section-subtitle tab-button" data-id="eCommerce"> Integrate with <br /> any E-commerce
+          </button>
+          <button class="section-subtitle tab-button" data-id="codeProduct"> Integrate with your<br />own code or
+            product </button>
+        </div>
+        <div class="contentWrapper">
+          <div class="content active" id="walet">
+            <div class="use__content">
+              <div>
+                <h3 class="section-subtitle use__subtitle"> Use as your wallet </h3>
+                <p class="main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore. </p>
+              </div>
+              <div class="use__image">
+                <img class="use__image-1" src="./images/use-1-1.svg" alt="wallet illustration" width="650" />
+                <img class="use__image-2" src="./images/use-1-2.svg" alt="wallet illustration" width="650" />
+              </div>
+            </div>
+          </div>
+          <div class="content" id="wordpress">
+            <div class="use__content">
+              <div>
+                <h3 class="section-subtitle use__subtitle"> Integrate with WP </h3>
+                <p class="main-text"> Есть плагины для интеграции с WP и WHMCS. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum dolore. </p>
+              </div>
+              <div class="use__image">
+                <img class="use__image-1" src="./images/use-2-1.svg" alt="wallet illustration" width="650" />
+                <img class="use__image-2" src="./images/use-2-2.svg" alt="wallet illustration" width="650" />
+              </div>
+            </div>
+          </div>
+          <div class="content" id="cms">
+            <div class="use__content">
+              <div>
+                <h3 class="section-subtitle use__subtitle"> Integrate with popular CMS </h3>
+                <p class="main-text"> Интегрировать с популярными CMS, плагинами и биллинг системами. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. </p>
+              </div>
+              <div class="use__image">
+                <img class="use__image-1" src="./images/use-3-1.svg" alt="wallet illustration" width="650" />
+                <img class="use__image-2" src="./images/use-3-2.svg" alt="wallet illustration" width="650" />
+              </div>
+            </div>
+          </div>
+          <div class="content" id="eCommerce">
+            <div class="use__content">
+              <div>
+                <h3 class="section-subtitle use__subtitle"> Integrate with any E-commerce </h3>
+                <p class="main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore. </p>
+              </div>
+              <div class="use__image">
+                <img class="use__image-1" src="./images/use-4-1.svg" alt="wallet illustration" width="650" />
+                <img class="use__image-2" src="./images/use-4-2.svg" alt="wallet illustration" width="650" />
+              </div>
+            </div>
+          </div>
+          <div class="content" id="codeProduct">
+            <div class="use__content">
+              <div>
+                <h3 class="section-subtitle use__subtitle"> Integrate with your own code or product </h3>
+                <p class="main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore. </p>
+              </div>
+              <div class="use__image">
+                <img class="use__image-1" src="./images/use-5-1.svg" alt="wallet illustration" width="650" />
+                <img class="use__image-2" src="./images/use-5-2.svg" alt="wallet illustration" width="650" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion use__accordion" id="accordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingUseOne">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseUseOne" aria-expanded="true" aria-controls="collapseUseOne">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> Your own wallet </button>
+            </h3>
+            <div id="collapseUseOne" class="accordion-collapse collapse" aria-labelledby="headingUseOne"
+              data-bs-parent="#accordion">
+              <h3 class="section-subtitle">Use as your wallet</h3>
+              <div class="accordion-body main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingUseTwo">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseUseTwo" aria-expanded="true" aria-controls="collapseUseTwo">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> Integrate with Wordpress </button>
+            </h3>
+            <div id="collapseUseTwo" class="accordion-collapse collapse" aria-labelledby="headingUseTwo"
+              data-bs-parent="#accordion">
+              <h3 class="section-subtitle">Integrate with WP</h3>
+              <div class="accordion-body main-text"> Есть плагины для интеграции с WP и WHMCS. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingUseThree">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseUseThree" aria-expanded="true" aria-controls="collapseUseThree">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> Integrate with popular CMS </button>
+            </h3>
+            <div id="collapseUseThree" class="accordion-collapse collapse" aria-labelledby="headingUseThree"
+              data-bs-parent="#accordion">
+              <h3 class="section-subtitle">Integrate with popular CMS</h3>
+              <div class="accordion-body main-text"> Интегрировать с популярными CMS, плагинами и биллинг системами.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingUseFour">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseUseFour" aria-expanded="true" aria-controls="collapseUseFour">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> Integrate with any E-commerce </button>
+            </h3>
+            <div id="collapseUseFour" class="accordion-collapse collapse" aria-labelledby="headingUseFour"
+              data-bs-parent="#accordion">
+              <h3 class="section-subtitle">Integrate with any E-commerce</h3>
+              <div class="accordion-body main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingUseFive">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseUseFive" aria-expanded="true" aria-controls="collapseUseFive">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> Integrate with your own code or product </button>
+            </h3>
+            <div id="collapseUseFive" class="accordion-collapse collapse" aria-labelledby="headingUseFive"
+              data-bs-parent="#accordion">
+              <h3 class="section-subtitle"> Integrate with your own code or product </h3>
+              <div class="accordion-body main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Integrations & Plugins -->
+    <section class="plugins__section">
+      <div class="plugins__container">
+        <div class="container">
+          <div class="plugins__background">
+            <div class="unskew-container">
+              <h2 id="integrations" class="section-title"> Integrations & Plugins </h2>
+            </div>
+            <div class="plugins__box">
+              <div class="logo__thumb">
+                <div class="unskew-container plugins__logo-thumb">
+                  <a class="plugins__link" href="#">
+                    <img src="./images/wp-logo.svg" alt="free integration logo" width="80" /></a>
+                </div>
+                <div class="unskew-container plugins__logo-thumb">
+                  <a class="plugins__link" href="#">
+                    <img src="./images/woo-logo.png" alt="free integration logo" width="80" /></a>
+                </div>
+              </div>
+              <div class="unskew-container plugins__info-box">
+                <h3 class="section-subtitle">Free Integration</h3>
+                <p class="main-text"> The scope of use is pretty broad indeed, depending upon your aims and needs. In
+                  case you need some additional ideas, we don’t mind sharing. WordPress and WooCommerce are the most
+                  obvious ones </p>
+              </div>
+            </div>
+            <div class="plugins__box">
+              <div class="logo__thumb--custom">
+                <div class="unskew-container plugins__logo-thumb plugins__logo-thumb--small">
+                  <a class="plugins__link" href="#"><img src="./images/shopify-logo.svg" alt="free integration logo"
+                      width="80" /></a>
+                </div>
+                <div class="unskew-container plugins__logo-thumb plugins__logo-thumb--pl plugins__logo-thumb--small">
+                  <a class="plugins__link" href="#"><img src="./images/drupal-logo.svg" alt="free integration logo"
+                      width="65" /></a>
+                </div>
+                <div class="unskew-container plugins__logo-thumb plugins__logo-thumb--small">
+                  <a class="plugins__link" href="#">
+                    <img src="./images/magento-logo.svg" alt="free integration logo" width="80" /></a>
+                </div>
+                <div class="unskew-container plugins__logo-thumb plugins__logo-thumb--small">
+                  <a class="plugins__link" href="#">
+                    <img src="./images/zapier-logo.svg" alt="free integration logo" width="70" /></a>
+                </div>
+                <div class="unskew-container plugins__logo-thumb plugins__logo-thumb--small">
+                  <a class="plugins__link" href="#">
+                    <img src="./images/opencard-logo.svg" alt="free integration logo" width="80" /></a>
+                </div>
+                <div class="unskew-container plugins__logo-thumb plugins__logo-thumb--small">
+                  <a class="plugins__link" href="#"><img src="./images/hubspot-logo.svg" alt="free integration logo"
+                      width="70" /></a>
+                </div>
+              </div>
+              <div class="unskew-container plugins__info-box">
+                <h3 class="section-subtitle">Custom Integration</h3>
+                <p class="main-text"> The scope of use is pretty broad indeed, depending upon your aims and needs. In
+                  case you need some additional ideas, we don’t mind sharing. WordPress and WooCommerce are the most
+                  obvious ones </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tariff plans -->
+    <section class="tariff__section">
+      <div class="container">
+        <h2 id="tariff-plans" class="section-title">Tariff plans</h2>
+        <ul class="skew-container tariff__container">
+          <li class="tariff__card">
+            <div class="unskew-container tariff__card--padding">
+              <div>
+                <h3 class="section-subtitle tariff__subtitle"> Administration <br /> & Support </h3>
+                <div class="tariff__dots"></div>
+              </div>
+              <p class="main-text tariff__description"> do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="tariff__card--bottom">
+                <p class="tariff__price"> $2000 <br /> for all period </p>
+                <a class="primary-button" href="#form">Contact us</a>
+              </div>
+            </div>
+          </li>
+          <li class="tariff__card tariff__card--white">
+            <div class="unskew-container tariff__card--padding">
+              <div>
+                <h3 class="section-subtitle tariff__subtitle tariff__subtitle--lh"> Free </h3>
+                <div class="tariff__dots"></div>
+              </div>
+              <p class="main-text tariff__description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <div class="tariff__card--bottom">
+                <p class="tariff__price"> $0 <br /> for all period </p>
+                <a class="primary-button tariff__button tariff__button--accent" href="#">Go to GitHub</a>
+              </div>
+            </div>
+          </li>
+          <li class="tariff__card">
+            <div class="unskew-container tariff__card--padding">
+              <div>
+                <h3 class="section-subtitle tariff__subtitle tariff__subtitle--lh"> Custom integration </h3>
+                <div class="tariff__dots"></div>
+              </div>
+              <p class="main-text tariff__description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </p>
+              <div class="tariff__card--bottom">
+                <p class="tariff__price"> on request <br /> per month </p>
+                <a class="primary-button" href="#form">Contact us</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- How cubexy actually works? -->
+    <section class="works__section">
+      <div class="container works__container">
+        <h2 id="how-cubexy-works" class="section-title"> How cubexy actually works? </h2>
+        <div class="works__video">
+          <div class="embed-container">
+            <iframe src="https://www.youtube.com/embed/RxLf83-ss2I" allowfullscreen></iframe>
+          </div>
+        </div>
+        <p class="main-text"> You can actually create a module yourself using API. Detailed documentation Is available
+          on request. Сюда можно добавить инфы, что модуль нужно написать самому, используя Апишку - у нас есть дока. А
+          для вукомерса и вордпресса не нужно писать самому. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+        <div class="skew-container skew-container--top">
+          <div class="unskew-container">
+            <div class="process__dots--white">
+              <div class="process__dots-gradient works__dots--gradient"></div>
+            </div>
+          </div>
+          <ul class="process__list">
+            <li class="process__item">
+              <span class="process__index">1</span>
+              <h2 class="section-subtitle process__subtitle"> Install and Launch Your SHKeepper </h2>
+            </li>
+            <li class="process__item">
+              <span class="process__index">2</span>
+              <h2 class="section-subtitle process__subtitle"> SHKeepper Discovers Different Wallets </h2>
+            </li>
+            <li class="process__item">
+              <span class="process__index">3</span>
+              <h2 class="section-subtitle process__subtitle"> Accept and Make Payments w/ SHKeepper </h2>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Want to try cubexy? -->
+    <section class="try__section">
+      <div class="try__background skew-container">
+        <div class="container">
+          <div class="try__wrapper unskew-container">
+            <h2 class="section-title try__title">Want to try cubexy?</h2>
+            <p class="main-text try__description"> Get a self-hosted keeper... </p>
+            <div class="try__box">
+              <a class="primary-button try__button--mr" href="#">Get for free</a>
+              <a class="primary-button primary-button--white" href="#form">Help me to integrate it</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Need help using cubexy? -->
+    <section class="help__section">
+      <div class="container">
+        <h2 class="section-title">Need help using cubexy?</h2>
+        <p class="main-text help__info help__description"> We are here to help, hence below you should find all
+          essential information you may need </p>
+        <ul class="help__list">
+          <li class="help__item">
+            <div class="help__box">
+              <img class="help__illustration" width="130" src="./images/help-1.svg" alt="documentation" />
+              <h3 class="help__subtitle section-subtitle">Documentation</h3>
+              <p class="main-text help__info"> Please exploit this user documentation that covers everything to get you
+                started or help sort out some technical issues. </p>
+            </div>
+            <a href="#" class="primary-button">Learn more</a>
+          </li>
+          <li class="help__item">
+            <div class="help__box">
+              <img class="help__illustration" width="130" src="./images/help-2.svg" alt="Assistant" />
+              <h3 class="help__subtitle section-subtitle">Ask a question</h3>
+              <p class="main-text help__info"> Didn't find the right answers to your questions? Do not hesitate to
+                contact us. </p>
+            </div>
+            <a href="#form" class="primary-button">Contact support</a>
+          </li>
+          <li class="help__item">
+            <div class="help__box">
+              <img class="help__illustration" width="130" src="./images/help-3.svg" alt="contribute" />
+              <h3 class="help__subtitle section-subtitle">Contribute</h3>
+              <p class="main-text help__info"> In case you want to contribute, you can forward us a module for your CMS.
+                After verification, we will add it. </p>
+            </div>
+            <a href="#form" class="primary-button">Send module</a>
+          </li>
+          <li class="help__item">
+            <div class="help__box">
+              <img class="help__illustration" width="130" src="./images/help-4.svg" alt="GitHub logo" />
+              <h3 class="help__subtitle section-subtitle">GitHub</h3>
+              <p class="main-text help__info"> Having a technical question or want to help improve the code? Help us out
+                on GitHub. </p>
+            </div>
+            <a href="#" class="primary-button">Go to GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Why Should You Choose cubexy? -->
+    <section class="plugins__section why__section">
+      <div class="plugins__container">
+        <div class="container">
+          <div class="plugins__background">
+            <div class="unskew-container">
+              <h2 class="section-title section-title--mb"> Why Should You Choose cubexy? </h2>
+              <h3 class="section-subtitle">It's free and open-source</h3>
+              <p class="main-text main-text--mb30"> cubexy is a self-hosted keeper, an open-source cryptocurrency
+                payment processor. In more detail, cubexy is free and open-source, non-custodial, self-hosted software.
+                It allows you to receive payments P2P directly to your software or hardware wallet. Being free and
+                open-source it gives an excellent opportunity for developers to build things and integrations on top of
+                cubexy Thus you've got yourself your own payment processor. Equipped with cubexy, technically, it is
+                like your own bank in your pocket. </p>
+              <h3 class="section-subtitle">Privacy of the customers</h3>
+              <p class="main-text"> cubexy offers a direct way for store-owners and charities to receive Bitcoin,
+                Ethereum, LiteCoine, and other cryptocurrency payments, which are bound to improve the privacy of the
+                customers/donors significantly. There are no subscriptions, no transaction fees. No third-party
+                involvement significantly increases the censorship resistance, privacy, and security for you and your
+                customers. More to it, cubexy enables you to become a processor yourself so that you can offer different
+                packages and help spread the adoption locally or globally. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="faq__section">
+      <div class="container faq__container">
+        <h2 id="faq" class="section-title">FAQ</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> What is cubexy? </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> Бесплатный процессор криптовалютных платежей с открытым исходным
+                кодом, который позволяет вам получать платежи напрямую, без комиссий, транзакционных издержек или
+                посредников. Это система выставления счетов, не связанная с хранением, которая исключает участие третьей
+                стороны. Платежи поступают прямо на ваш кошелек, что повышает конфиденциальность и безопасность. Ваши
+                закрытые ключи никогда не требуются для получения платежей на ваш сервер. Повторное использование адреса
+                невозможно, так как каждый счет использует новый адрес для получения платежей на ваш кошелек. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> Who can use cubexy? </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> Сервер cubexy — это многофункциональное программное обеспечение с
+                множеством вариантов использования, которое может решить проблемы для разных типов пользователей. Это
+                может быть полезно торговцам, создателям контента, пользователям сети Lightning, биржам,
+                хостинг-провайдерам и многим другим. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> How to install cubexy Server? </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> Это зависит от того, какой из различных вариантов развертывания
+                соответствует вашим конкретным потребностям. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFour">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> Do I need to have an online store to use cubexy Server? </button>
+            </h3>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> Вы можете запустить свой сервер cubexy и быть обработчиком платежей
+                для своих друзей или местного рынка. Другим вариантом использования является прием пожертвований через
+                приложение POS (Point of Sale) или кнопки оплаты, которые можно скопировать и вставить в виде фрагментов
+                HTML на любой веб-сайт. Также можете использовать cubexy для вашего онлайн магазина. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFive">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> How does cubexy create a new address for each invoice? </button>
+            </h3>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> cubexy Server помогает устранить проблему конфиденциальности
+                повторного использования адреса. Он делает это, предоставляя новый адрес каждый раз, когда запрашивается
+                счет для оплаты. Все это делается автоматически, и продавцу не нужно отслеживать, какие адреса
+                принадлежат какому кошельку, магазину и т. д. Сервер cubexy организует всю платежную информацию в
+                подробной системе выставления счетов для продавца. Принцип работы довольно прост. Продавцы подключают
+                кошелек к каждому из своих магазинов, в которые они хотят получать платежи. Счета, выставленные для
+                платежей в магазине, напрямую связаны с подключенным кошельком продавца. Адреса счетов получены из
+                xpubkey (opens new window) кошелька, связанного с магазином. Программному обеспечению нужен только ваш
+                расширенный открытый ключ кошелька для создания новых адресов для каждого платежа. Эти адреса
+                контролируются сервером cubexy по мере их перемещения. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingSix">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> What if I have a problem paying an invoice? </button>
+            </h3>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> Если у вас возникли проблемы с оплатой счета cubexy Server,
+                вероятно, это связано с одной из следующих причин: .......... </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingSeven">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> What if I have a problem with a paid invoice? </button>
+            </h3>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> Чтобы запросить возврат у продавца, вы должны связаться с продавцом
+                напрямую! Сервер cubexy не имеет отношения к продавцу, у которого вы приобрели продукт или услугу.
+                cubexy Server — это стек программного обеспечения с открытым исходным кодом, а не компания. Сообщество и
+                участники cubexy не имеют никакого контроля над тем, кто использует программное обеспечение или как они
+                его используют. Если вы оплатили счет продавцу и у вас возникла проблема с заказом, вы должны связаться
+                с продавцом напрямую, чтобы узнать, что произошло. Каждый продавец, использующий программное
+                обеспечение, контролирует свой собственный магазин и подключенные кошельки, на которые поступают
+                средства. cubexy не владеет и не имеет доступа к каким-либо средствам магазина, использующего
+                программное обеспечение cubexy, только продавец. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingEight">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> How can I use the cubexy Server API? </button>
+            </h3>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> The original BTCPay Server API is compatible for the most part with
+                BitPay's API (opens new window)to allow merchants to smoothly transition to using BTCPay if they prefer
+                a free, open source, payment processing alternative. In 2020, BTCPay Server started releasing a new
+                Greenfield API. This new API will co-exist with the original API and allow full usage of all BTCPay
+                Server features, without requiring the UI. You can view the current Greenfield API documentation (opens
+                new window). A BTCPay Server functionality that is not found in the Greenfield API documentation means
+                it isn't fully implemented yet in the new API and users should use the original API instead. The
+                discussion on the development of the new Greenfield API can be found here (opens new window). </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingNine">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> How can I backup my cubexy Server? </button>
+            </h3>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text">Вот тут непАнЯтнА</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTen">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> How much does it cost to run the cubexy Server? </button>
+            </h3>
+            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> BTCPay — это 100% бесплатное программное обеспечение с открытым
+                исходным кодом. Мы ничего с вас не берем. Однако, чтобы запустить его, вы должны разместить его. Вы
+                можете запустить его как самостоятельное решение на собственном локальном сервере или использовать
+                провайдера облачного хостинга, что и делает большинство пользователей. Опытные пользователи могут
+                запускать BTCPay на собственном оборудовании. Менее технически подкованные пользователи могут
+                использовать варианты «Оборудование как услуга». Если вы не хотите размещать свой собственный сервер, вы
+                можете использовать бесплатный сторонний хост. Посетите нашу страницу развертывания для получения
+                дополнительной информации о различных способах запуска BTCPay. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingEleven">
+              <button class="section-subtitle accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                <svg class="accordion-arrow" width="26" height="25" viewBox="0 0 26 25">
+                  <path
+                    d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z" />
+                </svg> What are the minimal requirements for cubexy? </button>
+            </h3>
+            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body main-text"> If you would like to run Bitcoin and Lightning Network nodes, the
+                minimal requirements are : 2GB Ram 5 GB of storage для каждой крипты и 5 GB для контроллера Docker
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form -->
+    <section id="form" class="form__section">
+      <div class="container form__container">
+        <div class="form__banner">
+          <div>
+            <h2 class="section-subtitle form__title"> Would you like <br /> to ask a question? </h2>
+            <p class="main-text"> Leave us a message & we will reply shortly. </p>
+          </div>
+          <div>
+            <p class="main-text">Support available</p>
+            <span class="form__workhours">24/7/365</span>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <div class="form__background">
+            <div class="unskew-container">
+              <form class="" action="#" method="post">
+                <h3 class="section-subtitle form__subtitle"> SEND A REQUEST </h3>
+                <label class="form__label">Subject</label>
+                <div class="form__content d-flex mb-4">
+                  <input type="radio" class="btn-check" name="options" value="orderAdministration" id="option1" />
+                  <label class="btn form__button btn-sm" for="option1">Order administration</label>
+                  <input type="radio" class="btn-check" name="options" value="orderCustomIntegration" id="option2" />
+                  <label class="btn form__button btn-sm" for="option2">Order custom integration</label>
+                  <input type="radio" class="btn-check" name="options" value="sendModule" id="option3" />
+                  <label class="btn form__button btn-sm" for="option3">Send module</label>
+                  <input type="radio" class="btn-check" name="options" value="contactSupport" id="#option4" />
+                  <label class="btn form__button btn-sm" for="option4">Contact support</label>
+                </div>
+                <label for="inputEmail" class="form__label">Email address</label>
+                <input type="email" class="form-control mb-4" id="inputEmail" name="email"
+                  placeholder="Enter your email" />
+                <label for="inputText" class="form__label">Message</label>
+                <textarea rows="5" class="form-control mb-4" id="inputText" name="message"
+                  placeholder="Text"></textarea>
+                <button type="submit" class="btn form__submit primary-button"> Submit </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__background--deco"></div>
+      <div class="footer__background">
+        <div class="unskew-container">
+          <div class="footer__dots"></div>
+        </div>
+        <div class="unskew-container container footer__container">
+          <div class="footer-nav__thumb">
+            <div class="footer__content">
+              <a class="footer__logo" href="#header"><img class="footer__logo--width" src="./images/cubexy_logo.svg"
+                  alt="cubexy logo" /></a>
+              <p class="main-text footer__info"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore. </p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a href="#"><svg class="footer__social-icon footer__social-icon--fb" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.38226 0C1.95468 0 0 1.95468 0 4.38226V19.6178C0 22.0453 1.95468 24 4.38226 24H12.6398V14.6175H10.1588V11.2395H12.6398V8.35351C12.6398 6.08611 14.1057 4.00426 17.4825 4.00426C18.8497 4.00426 19.8608 4.13551 19.8608 4.13551L19.7813 7.29002C19.7813 7.29002 18.7501 7.28028 17.625 7.28028C16.4073 7.28028 16.212 7.84135 16.212 8.77279V11.2395H19.878L19.7183 14.6175H16.212V24H19.6177C22.0453 24 24 22.0454 24 19.6178V4.38228C24 1.9547 22.0453 2.4e-05 19.6177 2.4e-05H4.38223L4.38226 0Z" />
+                    </svg></a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#"><svg class="footer__social-icon footer__social-icon--twitter" width="24" height="24"
+                      viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.48 0.47998C5.85248 0.47998 0.47998 5.85248 0.47998 12.48C0.47998 19.1075 5.85248 24.48 12.48 24.48C19.1075 24.48 24.48 19.1075 24.48 12.48C24.48 5.85248 19.1075 0.47998 12.48 0.47998ZM17.3612 10.31C17.3662 10.4125 17.3675 10.515 17.3675 10.615C17.3675 13.74 14.9912 17.3412 10.6437 17.3412C9.3591 17.3434 8.10119 16.9744 7.02123 16.2787C7.20498 16.3012 7.39373 16.31 7.58498 16.31C8.69248 16.31 9.71123 15.9337 10.52 15.2987C10.0271 15.2891 9.54957 15.1259 9.15387 14.8319C8.75817 14.5379 8.46404 14.1278 8.31248 13.6587C8.66642 13.726 9.03104 13.7119 9.37873 13.6175C8.84379 13.5093 8.36273 13.2195 8.01712 12.7971C7.6715 12.3747 7.48261 11.8457 7.48248 11.3V11.2712C7.80123 11.4475 8.16623 11.555 8.55373 11.5675C8.05223 11.2336 7.69721 10.7208 7.56129 10.1339C7.42536 9.54697 7.51879 8.9303 7.82248 8.40998C8.41617 9.13998 9.15656 9.73716 9.99569 10.1629C10.8348 10.5886 11.754 10.8333 12.6937 10.8812C12.5743 10.3741 12.6257 9.84174 12.84 9.36686C13.0543 8.89199 13.4195 8.50122 13.8788 8.25531C14.3381 8.0094 14.8658 7.92213 15.3798 8.00707C15.8939 8.09201 16.3654 8.34439 16.7212 8.72498C17.2502 8.62032 17.7575 8.4263 18.2212 8.15123C18.0449 8.6989 17.6758 9.16395 17.1825 9.45998C17.651 9.40355 18.1086 9.27758 18.54 9.08623C18.2231 9.5611 17.8239 9.97553 17.3612 10.31V10.31Z" />
+                    </svg></a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#"><svg class="footer__social-icon footer__social-icon--linkedin" width="22" height="22"
+                      viewBox="0 0 22 22">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.7206e-07 1.838C2.7206e-07 1.35053 0.193646 0.883032 0.538338 0.53834C0.88303 0.193648 1.35053 2.45031e-06 1.838 2.45031e-06H20.16C20.4016 -0.000392101 20.6409 0.0468654 20.8641 0.139069C21.0874 0.231273 21.2903 0.366612 21.4612 0.537339C21.6322 0.708065 21.7677 0.910826 21.8602 1.13401C21.9526 1.3572 22.0001 1.59643 22 1.838V20.16C22.0003 20.4016 21.9529 20.6409 21.8606 20.8642C21.7683 21.0875 21.6328 21.2904 21.462 21.4613C21.2912 21.6322 21.0884 21.7678 20.8651 21.8602C20.6419 21.9526 20.4026 22.0001 20.161 22H1.838C1.59655 22 1.35746 21.9524 1.1344 21.86C0.911335 21.7676 0.708671 21.6321 0.537984 21.4613C0.367297 21.2905 0.231932 21.0878 0.139623 20.8647C0.0473133 20.6416 -0.000131096 20.4025 2.7206e-07 20.161V1.838ZM8.708 8.388H11.687V9.884C12.117 9.024 13.217 8.25 14.87 8.25C18.039 8.25 18.79 9.963 18.79 13.106V18.928H15.583V13.822C15.583 12.032 15.153 11.022 14.061 11.022C12.546 11.022 11.916 12.111 11.916 13.822V18.928H8.708V8.388ZM3.208 18.791H6.416V8.25H3.208V18.79V18.791ZM6.875 4.812C6.88105 5.08667 6.83217 5.35979 6.73124 5.61532C6.63031 5.87084 6.47935 6.10364 6.28723 6.30003C6.09511 6.49643 5.8657 6.65248 5.61246 6.75901C5.35921 6.86554 5.08724 6.92042 4.8125 6.92042C4.53776 6.92042 4.26579 6.86554 4.01255 6.75901C3.7593 6.65248 3.52989 6.49643 3.33777 6.30003C3.14565 6.10364 2.99469 5.87084 2.89376 5.61532C2.79283 5.35979 2.74395 5.08667 2.75 4.812C2.76187 4.27286 2.98439 3.75979 3.36989 3.38269C3.75539 3.00558 4.27322 2.79442 4.8125 2.79442C5.35178 2.79442 5.86961 3.00558 6.25512 3.38269C6.64062 3.75979 6.86313 4.27286 6.875 4.812V4.812Z" />
+                    </svg></a>
+                </li>
+              </ul>
+            </div>
+            <ul class="pt-lg-5">
+              <li>
+                <h3 class="section-subtitle footer-nav__title">Software</h3>
+              </li>
+              <li>
+                <a class="footer-nav__link section-subtitle" href="#tariff-plans">Tariffs </a>
+              </li>
+              <li>
+                <a class="footer-nav__link section-subtitle" href="#integrations">Integrations </a>
+              </li>
+              <li>
+                <a class="footer-nav__link section-subtitle" href="#how-to-use">How to Use? </a>
+              </li>
+              <li>
+                <a class="footer-nav__link section-subtitle" href="#how-cubexy-works">How it actually works?</a>
+              </li>
+            </ul>
+            <ul class="pt-lg-5">
+              <li>
+                <h3 class="section-subtitle footer-nav__title">Resources</h3>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link section-subtitle" href="#">Documentation </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link section-subtitle" href="#form">Support </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link section-subtitle" href="#">Contribute </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link section-subtitle" href="#">GitHub?</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+</html>
