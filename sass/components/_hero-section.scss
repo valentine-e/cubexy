@@ -227,6 +227,14 @@ body {
   color: var(--primary-text-color);
 }
 
+.main-text--blue {
+  color: var(--accent-color);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
 .advantages__list {
   row-gap: 24px;
   column-gap: 0;
@@ -560,6 +568,7 @@ button.primary-button {
 }
 
 .howto__section {
+  margin-bottom: 96px;
   img {
     width: 400px;
     height: 417px;
@@ -588,6 +597,90 @@ button.primary-button {
   .main-text {
     margin-bottom: 32px;
   }
+}
+
+.howto__call {
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-about .hero__content {
+  width: 47%;
+}
+
+.hero__section.hero-about {
+  padding: 10% 0;
+}
+
+.advantages__section.advantages__about {
+  margin: 0 0 56px 0;
+}
+
+.advantages__about {
+  .howto__call .main-text {
+    width: 780px;
+    text-align: center;
+  }
+}
+
+.team .section-title {
+  text-align: start;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  img {
+    width: 320px;
+  }
+}
+
+.team-item__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.team-item__label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.team-item span {
+  font-size: 48px;
+}
+
+.addresses-thumb {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.contacts__item {
+  img {
+    width: 40px;
+  }
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 @media screen and (max-width: 1023px) {
