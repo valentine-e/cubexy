@@ -20,23 +20,31 @@
 
   font-size: 24px;
   font-weight: 700;
-
   color: var(--white-color);
-  white-space: nowrap;
+  &:hover {
+    color: var(--white-color);
+  }
 }
 
 .primary-button--white {
   background: var(--white-color);
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
+  transition: all var(--timing-function);
+
+  &:hover {
+    color: var(--primary-text-color);
+    border: 2px solid var(--primary-text-color);
+  }
+
+  &:target {
+    color: var(--light-grey-color);
+    border: 2px solid var(--light-grey-color);
+  }
 }
 
 .skew-container {
   transform: skew(0deg, -5.55deg);
-}
-
-.unskew-container {
-  transform: skew(0deg, 5.55deg);
 }
 
 .main-text {

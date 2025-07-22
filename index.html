@@ -16,25 +16,6 @@
   <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
     crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.min.css" />
-  <style>
-    .embed-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-    }
-
-    .embed-container iframe,
-    .embed-container object,
-    .embed-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
   <title>Document</title>
 </head>
 <body>
@@ -66,16 +47,16 @@
                   <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M20 20L4 4m16 0L4 20" />
                 </svg>
               </button>
-              <li>
-                <a class=" site-nav__link" href="#integrations">Our Models </a>
+              <li class="site-nav__item">
+                <a class=" site-nav__link" href="/models.html">Our Models </a>
               </li>
-              <li>
-                <a class=" site-nav__link" href="#tariff-plans">How It Works</a>
+              <li class="site-nav__item">
+                <a class=" site-nav__link" href="/how-it-works.html">How It Works</a>
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a class=" site-nav__link" href="#faq">About</a>
               </li>
-              <li>
+              <li class="site-nav__item">
                 <a class=" site-nav__link" href="#">Contacts</a>
               </li>
             </ul>
@@ -305,96 +286,80 @@
     <!-- <section class="faq__section">
     </section> -->
     <!-- Form -->
-    <section id="form" class="form__section">
-      <div class="container form__container">
+    <footer class="footer">
+      <div class="container form-container ">
         <div class="form__wrapper">
-          <form class="" action="#" method="post">
-            <label for="inputName" class="form__label">Name</label>
-            <input type="Name" class="form-control mb-4" id="inputName" name="Name" placeholder="Name" />
-            <label for="inputEmail" class="form__label">Email </label>
-            <input type="email" class="form-control mb-4" id="inputEmail" name="email" placeholder="Example@mail.com" />
+          <form class="form" action="#" method="post">
+            <div> <label for="inputName" class="form__label">Name</label>
+              <input type="name" class="form-control " id="inputName" name="name" placeholder="Name" required />
+            </div>
+            <div> <label for="inputEmail" class="form__label">Email </label>
+              <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Example@mail.com"
+                required />
+            </div>
+            <button class="primary-button " type="submit">Let’s Talk</button>
           </form>
         </div>
-      </div>
-  </div>
-  </div>
-  </section>
-  <footer class="footer">
-    <div class="footer__background--deco"></div>
-    <div class="footer__background">
-      <div class="unskew-container">
-        <div class="footer__dots"></div>
-      </div>
-      <div class="unskew-container container footer__container">
         <div class="footer-nav__thumb">
           <div class="footer__content">
             <a class="footer__logo" href="#header"><img class="footer__logo--width" src="./images/cubexy_logo.svg"
                 alt="cubexy logo" /></a>
-            <p class="main-text footer__info"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore. </p>
             <ul class="footer__social-list">
               <li class="footer__social-item">
-                <a href="#"><svg class="footer__social-icon footer__social-icon--fb" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4.38226 0C1.95468 0 0 1.95468 0 4.38226V19.6178C0 22.0453 1.95468 24 4.38226 24H12.6398V14.6175H10.1588V11.2395H12.6398V8.35351C12.6398 6.08611 14.1057 4.00426 17.4825 4.00426C18.8497 4.00426 19.8608 4.13551 19.8608 4.13551L19.7813 7.29002C19.7813 7.29002 18.7501 7.28028 17.625 7.28028C16.4073 7.28028 16.212 7.84135 16.212 8.77279V11.2395H19.878L19.7183 14.6175H16.212V24H19.6177C22.0453 24 24 22.0454 24 19.6178V4.38228C24 1.9547 22.0453 2.4e-05 19.6177 2.4e-05H4.38223L4.38226 0Z" />
-                  </svg></a>
+                <a href="#"><img width="32px" class="" src="./images/YoutubeLogo.svg" alt="youtube logo" /></a>
               </li>
               <li class="footer__social-item">
-                <a href="#"><svg class="footer__social-icon footer__social-icon--twitter" width="24" height="24"
-                    viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.48 0.47998C5.85248 0.47998 0.47998 5.85248 0.47998 12.48C0.47998 19.1075 5.85248 24.48 12.48 24.48C19.1075 24.48 24.48 19.1075 24.48 12.48C24.48 5.85248 19.1075 0.47998 12.48 0.47998ZM17.3612 10.31C17.3662 10.4125 17.3675 10.515 17.3675 10.615C17.3675 13.74 14.9912 17.3412 10.6437 17.3412C9.3591 17.3434 8.10119 16.9744 7.02123 16.2787C7.20498 16.3012 7.39373 16.31 7.58498 16.31C8.69248 16.31 9.71123 15.9337 10.52 15.2987C10.0271 15.2891 9.54957 15.1259 9.15387 14.8319C8.75817 14.5379 8.46404 14.1278 8.31248 13.6587C8.66642 13.726 9.03104 13.7119 9.37873 13.6175C8.84379 13.5093 8.36273 13.2195 8.01712 12.7971C7.6715 12.3747 7.48261 11.8457 7.48248 11.3V11.2712C7.80123 11.4475 8.16623 11.555 8.55373 11.5675C8.05223 11.2336 7.69721 10.7208 7.56129 10.1339C7.42536 9.54697 7.51879 8.9303 7.82248 8.40998C8.41617 9.13998 9.15656 9.73716 9.99569 10.1629C10.8348 10.5886 11.754 10.8333 12.6937 10.8812C12.5743 10.3741 12.6257 9.84174 12.84 9.36686C13.0543 8.89199 13.4195 8.50122 13.8788 8.25531C14.3381 8.0094 14.8658 7.92213 15.3798 8.00707C15.8939 8.09201 16.3654 8.34439 16.7212 8.72498C17.2502 8.62032 17.7575 8.4263 18.2212 8.15123C18.0449 8.6989 17.6758 9.16395 17.1825 9.45998C17.651 9.40355 18.1086 9.27758 18.54 9.08623C18.2231 9.5611 17.8239 9.97553 17.3612 10.31V10.31Z" />
-                  </svg></a>
+                <a href="#"><img width="32px" class="" src="./images/WhatsappLogo.svg" alt="whatsapp logo" /></a>
               </li>
               <li class="footer__social-item">
-                <a href="#"><svg class="footer__social-icon footer__social-icon--linkedin" width="22" height="22"
-                    viewBox="0 0 22 22">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2.7206e-07 1.838C2.7206e-07 1.35053 0.193646 0.883032 0.538338 0.53834C0.88303 0.193648 1.35053 2.45031e-06 1.838 2.45031e-06H20.16C20.4016 -0.000392101 20.6409 0.0468654 20.8641 0.139069C21.0874 0.231273 21.2903 0.366612 21.4612 0.537339C21.6322 0.708065 21.7677 0.910826 21.8602 1.13401C21.9526 1.3572 22.0001 1.59643 22 1.838V20.16C22.0003 20.4016 21.9529 20.6409 21.8606 20.8642C21.7683 21.0875 21.6328 21.2904 21.462 21.4613C21.2912 21.6322 21.0884 21.7678 20.8651 21.8602C20.6419 21.9526 20.4026 22.0001 20.161 22H1.838C1.59655 22 1.35746 21.9524 1.1344 21.86C0.911335 21.7676 0.708671 21.6321 0.537984 21.4613C0.367297 21.2905 0.231932 21.0878 0.139623 20.8647C0.0473133 20.6416 -0.000131096 20.4025 2.7206e-07 20.161V1.838ZM8.708 8.388H11.687V9.884C12.117 9.024 13.217 8.25 14.87 8.25C18.039 8.25 18.79 9.963 18.79 13.106V18.928H15.583V13.822C15.583 12.032 15.153 11.022 14.061 11.022C12.546 11.022 11.916 12.111 11.916 13.822V18.928H8.708V8.388ZM3.208 18.791H6.416V8.25H3.208V18.79V18.791ZM6.875 4.812C6.88105 5.08667 6.83217 5.35979 6.73124 5.61532C6.63031 5.87084 6.47935 6.10364 6.28723 6.30003C6.09511 6.49643 5.8657 6.65248 5.61246 6.75901C5.35921 6.86554 5.08724 6.92042 4.8125 6.92042C4.53776 6.92042 4.26579 6.86554 4.01255 6.75901C3.7593 6.65248 3.52989 6.49643 3.33777 6.30003C3.14565 6.10364 2.99469 5.87084 2.89376 5.61532C2.79283 5.35979 2.74395 5.08667 2.75 4.812C2.76187 4.27286 2.98439 3.75979 3.36989 3.38269C3.75539 3.00558 4.27322 2.79442 4.8125 2.79442C5.35178 2.79442 5.86961 3.00558 6.25512 3.38269C6.64062 3.75979 6.86313 4.27286 6.875 4.812V4.812Z" />
-                  </svg></a>
+                <a href="#"><img width="32px" class="" src="./images/LinkedinLogo.svg" alt="linkedin logo" /></a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#"><img width="32px" class="" src="./images/InstagramLogo.svg" alt="instagram logo" /></a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#"><img width="32px" class="" src="./images/FacebookLogo.svg" alt="facebppk logo" /></a>
               </li>
             </ul>
           </div>
-          <ul class="pt-lg-5">
-            <li>
-              <h3 class="section-subtitle footer-nav__title">Software</h3>
+          <ul class="footer-nav__list ">
+            <li class="footer-nav__item">
+              <a class="footer-nav__title">Software</a>
             </li>
-            <li>
-              <a class="footer-nav__link section-subtitle" href="#tariff-plans">Tariffs </a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link " href="#tariff-plans">Tariffs </a>
             </li>
-            <li>
-              <a class="footer-nav__link section-subtitle" href="#integrations">Integrations </a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link " href="#integrations">Integrations </a>
             </li>
-            <li>
-              <a class="footer-nav__link section-subtitle" href="#how-to-use">How to Use? </a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link " href="#how-to-use">How to Use? </a>
             </li>
-            <li>
-              <a class="footer-nav__link section-subtitle" href="#how-cubexy-works">How it actually works?</a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link " href="#how-cubexy-works">How it actually works?</a>
             </li>
           </ul>
-          <ul class="pt-lg-5">
-            <li>
-              <h3 class="section-subtitle footer-nav__title">Resources</h3>
+          <ul class="footer-nav__list ">
+            <li class="footer-nav__item">
+              <a class="footer-nav__title">Resources</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link section-subtitle" href="#">Documentation </a>
+              <a class="footer-nav__link " href="#">Documentation </a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link section-subtitle" href="#form">Support </a>
+              <a class="footer-nav__link " href="#form">Support </a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link section-subtitle" href="#">Contribute </a>
+              <a class="footer-nav__link " href="#">Contribute </a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link section-subtitle" href="#">GitHub?</a>
+              <a class="footer-nav__link " href="#">GitHub?</a>
             </li>
           </ul>
+          <a class=" footer-nav__item footer-nav__title" href="#">About us</a>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
