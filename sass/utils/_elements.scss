@@ -7,7 +7,7 @@
   padding: 24px 32px;
   gap: 10px;
 
-  width: 253px;
+  width: fit-content;
   height: 77px;
 
   background: linear-gradient(77.09deg, #00ffc8 -22.14%, #2f5ed8 119.18%);
@@ -47,7 +47,7 @@
 
 .section-title {
   color: var(--primary-text-color);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 40px;
   margin-bottom: 32px;
   text-align: center;
