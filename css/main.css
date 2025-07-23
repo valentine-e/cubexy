@@ -277,6 +277,7 @@ body {
   background-color: var(--primary-background-color);
   font-family: "Ubuntu Sans", sans-serif;
   overflow-x: hidden;
+  color: var(--primary-text-color);
 }
 
 .site-wrapper {
@@ -285,8 +286,8 @@ body {
 
 .container {
   box-sizing: border-box;
-  max-width: 1460px;
-  padding: 0 30px;
+  max-width: 1440px;
+  padding: 0 40px;
   margin: 0 auto;
 }
 
@@ -375,8 +376,14 @@ body {
 
 .models__thumb {
   display: flex;
-  gap: 40px;
+  gap: 5%;
   align-items: center;
+}
+.models__thumb img {
+  width: 65%;
+}
+.models__thumb .models__info {
+  width: 30%;
 }
 
 .models__text {
@@ -506,10 +513,6 @@ body {
   line-height: 32px;
   color: var(--primary-text-color);
 }
-.slider-section img {
-  height: 700px;
-  width: 672px;
-}
 .slider-section .card-body {
   padding: 0;
 }
@@ -565,10 +568,20 @@ body {
   font-weight: 700;
 }
 
+.card-thumb {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card-img-box {
+  width: 48%;
+}
+
 .card-content {
+  width: 48%;
   position: relative;
   padding-top: 70px;
-  padding-left: 20px;
 }
 
 .slider-nav {
@@ -590,6 +603,9 @@ body {
 .form {
   width: 100%;
   height: 100%;
+}
+
+.form > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -608,7 +624,6 @@ body {
   gap: 56px;
   margin: 0 auto;
   width: 567px;
-  height: 417px;
   background: var(--white-color);
   box-shadow: 4px 4px 24px 8px rgba(0, 0, 0, 0.05);
   border-radius: 40px;
@@ -645,12 +660,16 @@ button.primary-button {
   margin-left: 13px;
 }
 
+.form__name {
+  margin-bottom: 24px;
+}
+
 .container.form-container {
   position: relative;
 }
 .container.form-container .primary-button {
   border: none;
-  margin: 0 auto;
+  margin: 56px auto 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -806,7 +825,7 @@ button.primary-button {
 }
 
 .howto__call {
-  margin: 40px 0 0;
+  margin: 96px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -817,11 +836,11 @@ button.primary-button {
 }
 
 .hero__section.hero-about {
-  padding: 10% 0;
+  padding: 8% 0;
 }
 
 .advantages__section.advantages__about {
-  margin: 0 0 56px 0;
+  margin: 96x 0 96px 0;
 }
 
 .advantages__about .howto__call .main-text {
@@ -884,6 +903,86 @@ button.primary-button {
 }
 .contacts__item img {
   width: 40px;
+}
+
+.docs__section {
+  margin: 96px 0;
+}
+.docs__section .section-title {
+  text-align: start;
+}
+
+.docs__thumb {
+  display: flex;
+  gap: 10%;
+}
+
+.docs__content {
+  width: 75%;
+}
+.docs__content p,
+.docs__content h3,
+.docs__content h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  margin-bottom: 0;
+}
+.docs__content a {
+  color: var(--primary-text-color);
+}
+
+.docs__nav {
+  width: 15%;
+}
+
+.list-style__number {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.docs-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.docs__content .docs__prev {
+  margin-bottom: 36px;
+}
+
+.docs__item {
+  position: relative;
+}
+.docs__item::after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0px;
+  height: 100%;
+  width: 2px;
+  background-color: var(--light-grey-color);
+}
+
+.docs__item.active::after {
+  background-color: var(--accent-color);
+}
+
+.docs__link {
+  padding: 6px;
+  font-size: 24px;
+  color: var(--primary-text-color);
+}
+
+.license-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.license-item {
+  display: flex;
+  gap: 40px;
 }
 
 @media screen and (max-width: 1023px) {

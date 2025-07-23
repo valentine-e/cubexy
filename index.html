@@ -86,8 +86,8 @@
         <ul class="models__list">
           <li class="models__item">
             <a class="models__thumb" href="#">
-              <img width="400" src="./images/model-1.png" alt="models illustration" />
-              <div>
+              <img src="./images/model-1.png" alt="models illustration" />
+              <div class="models__info">
                 <h3 class="section-subtitle">A-Frame</h3>
                 <p class="models-label">Studio</p>
                 <ul class="models-info">
@@ -107,7 +107,7 @@
           <li class="models__item">
             <a class="models__thumb" href="#">
               <img width="400" src="./images/model-2.png" alt="models illustration" />
-              <div>
+              <div class="models__info">
                 <h3 class="section-subtitle">Tiny House</h3>
                 <p class="models-label">Studio</p>
                 <ul class="models-info">
@@ -127,7 +127,7 @@
           <li class="models__item">
             <a class="models__thumb" href="#">
               <img width="400" src="./images/model-3.png" alt="models illustration" />
-              <div>
+              <div class="models__info">
                 <h3 class="section-subtitle">Cottage</h3>
                 <p class="models-label">One Bedroom</p>
                 <ul class="models-info">
@@ -147,7 +147,7 @@
           <li class="models__item">
             <a class="models__thumb" href="#">
               <img width="400" src="./images/model-4.png" alt="models illustration" />
-              <div>
+              <div class="models__info">
                 <h3 class="section-subtitle">Runch</h3>
                 <p class="models-label">Two Bedroom</p>
                 <ul class="models-info">
@@ -210,8 +210,8 @@
         <ul class="slider-container">
           <li class="active">
             <div class="card rounded-0 h-100">
-              <div class="row g-0 h-100">
-                <div class="col-md-6 ">
+              <div class="row g-0 h-100 card-thumb">
+                <div class="col-md-6 card-img-box ">
                   <img src="./images/slider-1.png" class="card-img d-none d-md-block" loading="lazy" alt="...">
                   <img src="./images/slider-1.png" class="card-img d-block d-md-none" loading="lazy" alt="...">
                 </div>
@@ -232,8 +232,8 @@
           </li>
           <li class="active">
             <div class="card rounded-0 h-100">
-              <div class="row g-0 h-100">
-                <div class="col-md-6 ">
+              <div class="row g-0 h-100 card-thumb">
+                <div class="col-md-6 card-img-box">
                   <img src="./images/slider-2.png" class="card-img d-none d-md-block" loading="lazy" alt="...">
                   <img src="./images/slider-2.png" class="card-img d-block d-md-none" loading="lazy" alt="...">
                 </div>
@@ -253,8 +253,8 @@
           </li>
           <li class="active">
             <div class="card rounded-0 h-100">
-              <div class="row g-0 h-100">
-                <div class="col-md-6 ">
+              <div class="row g-0 h-100 card-thumb">
+                <div class="col-md-6 card-img-box">
                   <img src="./images/slider-3.png" class="card-img d-none d-md-block" loading="lazy" alt="...">
                   <img src="./images/slider-3.png" class="card-img d-block d-md-none" loading="lazy" alt="...">
                 </div>
@@ -290,7 +290,7 @@
       <div class="container form-container ">
         <div class="form__wrapper">
           <form class="form" action="#" method="post">
-            <div> <label for="inputName" class="form__label">Name</label>
+            <div class="form__name"> <label for="inputName" class="form__label">Name</label>
               <input type="name" class="form-control " id="inputName" name="name" placeholder="Name" required />
             </div>
             <div> <label for="inputEmail" class="form__label">Email </label>
@@ -324,36 +324,33 @@
           </div>
           <ul class="footer-nav__list ">
             <li class="footer-nav__item">
-              <a class="footer-nav__title">Software</a>
+              <a class="footer-nav__title">Our Models</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#tariff-plans">Tariffs </a>
+              <a class="footer-nav__link " href="#tariff-plans">A-Frame</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#integrations">Integrations </a>
+              <a class="footer-nav__link " href="#integrations">Tiny House </a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#how-to-use">How to Use? </a>
+              <a class="footer-nav__link " href="#how-to-use">Cottage </a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#how-cubexy-works">How it actually works?</a>
+              <a class="footer-nav__link " href="#how-cubexy-works">Ranch</a>
             </li>
           </ul>
           <ul class="footer-nav__list ">
             <li class="footer-nav__item">
-              <a class="footer-nav__title">Resources</a>
+              <a class="footer-nav__title">Documentation</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#">Documentation </a>
+              <a class="footer-nav__link " href="./terms.html">Terms of Service </a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#form">Support </a>
+              <a class="footer-nav__link " href="./privacy.html">Privacy Policy </a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#">Contribute </a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link " href="#">GitHub?</a>
+              <a class="footer-nav__link " href="./privacy.html">Licenses</a>
             </li>
           </ul>
           <a class=" footer-nav__item footer-nav__title" href="#">About us</a>
