@@ -79,23 +79,3 @@
 .section-subtitle--white {
   color: var(--primary-text-color);
 }
-
-@media screen and (max-width: 767px) {
-  .section-title {
-    font-size: 24px;
-  }
-
-  .main-text {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
-  .primary-button {
-    font-size: 14px;
-    padding: 12px 26px;
-  }
-
-  .section-subtitle {
-    font-size: 12px;
-  }
-}
