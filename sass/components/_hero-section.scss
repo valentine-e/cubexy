@@ -818,7 +818,7 @@ button.primary-button {
 
   .models__item {
     width: 100%;
-    padding: 0 24px;
+    padding: 0;
   }
 
   .models__thumb {
@@ -880,6 +880,7 @@ button.primary-button {
   .advantages__section .primary-button {
     width: 100%;
     margin: 40px auto 0;
+    white-space: nowrap;
   }
 
   .slider-section .card-title {
@@ -921,6 +922,7 @@ button.primary-button {
 
   .slider-section .primary-button {
     position: inherit;
+    width: 100%;
   }
 
   .swiffy-slider {
@@ -930,10 +932,12 @@ button.primary-button {
   .slider-indicators {
     position: absolute;
     top: 450px;
+    height: fit-content;
   }
 
   .form__wrapper {
-    width: 100%;
+    min-width: 340px;
+    width: min-content;
     padding: 36px 24px;
     bottom: 400px;
     right: 50%;
