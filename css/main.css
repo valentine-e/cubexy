@@ -239,14 +239,18 @@ body {
     display: block;
   }
   .main-nav {
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
   }
   .site-nav {
+    overflow: hidden;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     flex-direction: column;
-    position: absolute;
+    justify-content: start;
+    position: fixed;
     top: 90px;
     right: 0;
     background-color: var(--primary-background-color);
@@ -929,8 +933,11 @@ button.primary-button {
     height: 40px;
   }
   .main-nav {
-    padding: 10px 0 15px;
+    padding: 15px;
     align-items: center;
+  }
+  .page-header {
+    margin-bottom: 140px;
   }
   .header__logo--width {
     width: 130px;
