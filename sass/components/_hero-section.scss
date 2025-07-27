@@ -178,9 +178,9 @@ body {
   }
 
   .site-nav {
-    width: 100%;
+    width: 100vw;
+    height: 100vw;
     flex-direction: column;
-
     position: absolute;
     top: 90px;
     right: 0;
