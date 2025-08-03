@@ -796,7 +796,7 @@ button.primary-button {
 }
 
 .advantages__section.advantages__about {
-  margin: 96x 0 96px 0;
+  margin: 146px 0 96px 0;
 }
 
 .advantages__about .howto__call .main-text {
@@ -1592,7 +1592,7 @@ button.primary-button {
     font-size: 16px;
   }
   .models-section {
-    margin-top: 120px;
+    margin-top: 180px;
   }
   .models-section .primary-button {
     width: 100%;
