@@ -953,6 +953,9 @@ button.primary-button {
   display: flex;
   gap: 60px;
 }
+.hero-model_thumb .hero-image {
+  display: none;
+}
 
 .hero-model.hero__section {
   padding: 5% 0;
@@ -1186,7 +1189,7 @@ button.primary-button {
   gap: 24px;
 }
 .layout .layout-images .layout-img {
-  width: 48%;
+  width: 47%;
 }
 .layout .layout-images img {
   width: 100%;
@@ -1201,8 +1204,8 @@ button.primary-button {
   border-bottom: 2px solid var(--light-grey-color);
 }
 
-.layout-box div {
-  margin-bottom: 12px;
+.layout-box div.mt {
+  margin-top: 12px;
 }
 
 @media screen and (max-width: 1339px) {
@@ -1434,6 +1437,61 @@ button.primary-button {
   .license-item {
     flex-direction: column;
   }
+  .hero__section.hero-model {
+    position: unset;
+  }
+  .hero-model_thumb {
+    margin-top: 120px;
+    flex-direction: column;
+  }
+  .hero-model_thumb #productGallery {
+    display: none;
+  }
+  .hero-model_thumb .hero__title {
+    font-size: 32px;
+  }
+  .hero-model_thumb .main-text {
+    font-size: 16px;
+  }
+  .hero-model_thumb .hero__content {
+    width: 100%;
+  }
+  .hero-model_thumb .hero__content .hero-image {
+    display: block;
+    width: 420px;
+    margin: 0 auto 40px;
+  }
+  .hero-model_thumb .models__list {
+    gap: 24px;
+  }
+  .layout .layout-content {
+    flex-direction: column;
+  }
+  .layout .layout-box {
+    width: 100%;
+    gap: 16px;
+  }
+  .layout .layout-images {
+    gap: 8px;
+    justify-content: space-between;
+  }
+  .layout .layout-images .layout-img {
+    width: 49%;
+  }
+  .layout .layout-box div {
+    margin-bottom: 0;
+  }
+  .layout .section-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .layout .main-text {
+    font-size: 14px;
+  }
+  .layout .layout-info {
+    gap: 8px;
+    padding-bottom: 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .models__thumb img {
@@ -1560,6 +1618,9 @@ button.primary-button {
   .howto__section img {
     width: 100%;
     height: 100%;
+  }
+  .hero-model_thumb .hero-image {
+    width: 100%;
   }
 }
 @media screen and (max-width: 479px) {
