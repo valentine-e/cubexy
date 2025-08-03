@@ -1730,4 +1730,20 @@ button.primary-button {
   .footer {
     margin-top: 360px;
   }
+
+  .hero-model_thumb {
+    .hero__content {
+      width: 100%;
+
+      .hero-image {
+        width: 100%;
+      }
+    }
+  }
+
+  .layout {
+    .layout-images .layout-img {
+      width: 48%;
+    }
+  }
 }
