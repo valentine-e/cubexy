@@ -949,6 +949,262 @@ button.primary-button {
   display: none;
 }
 
+.hero-model_thumb {
+  display: flex;
+  gap: 60px;
+}
+
+.hero-model.hero__section {
+  padding: 5% 0;
+}
+
+.hero-model .models__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero-model .slider-item-ratio .slider-container > * > * {
+  height: auto;
+}
+.hero-model .slider-nav-round .slider-nav-outside-expand {
+  width: 56%;
+  position: absolute;
+  bottom: 140px;
+  right: 200px;
+}
+
+.config {
+  margin-bottom: 96px;
+}
+.config .section-title {
+  text-align: start;
+}
+.config .config-img {
+  width: 42%;
+}
+.config .config-img img {
+  width: 100%;
+}
+.config .config-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.config .config-container {
+  width: 55%;
+  font-size: 0;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+}
+.config .config-container input.config-item {
+  display: none;
+}
+.config .config-container input.config-item:checked + label {
+  border-bottom: 2px solid var(--primary-text-color);
+  transition: 0.25 all ease;
+  z-index: 9;
+}
+.config .config-container input.config-item#tab1:checked ~ .line {
+  display: none;
+}
+.config .config-container input.config-item#tab1:checked ~ .content-container #c1 {
+  z-index: 99;
+  opacity: 1;
+  padding: 90px 0 0;
+}
+.config .config-container input.config-item#tab2:checked ~ .line {
+  display: none;
+}
+.config .config-container input.config-item#tab2:checked ~ .content-container #c2 {
+  z-index: 99;
+  opacity: 1;
+  padding: 90px 0 0;
+}
+.config .config-container input.config-item#tab3:checked ~ .line {
+  display: none;
+}
+.config .config-container input.config-item#tab3:checked ~ .content-container #c3 {
+  z-index: 99;
+  opacity: 1;
+  padding: 90px 0 0;
+}
+.config .config-container input.config-item#tab4:checked ~ .line {
+  display: none;
+}
+.config .config-container input.config-item#tab4:checked ~ .content-container #c4 {
+  z-index: 99;
+  opacity: 1;
+  padding: 90px 0 0;
+}
+.config .config-container input.config-item#tab5:checked ~ .line {
+  display: none;
+}
+.config .config-container input.config-item#tab5:checked ~ .content-container #c5 {
+  z-index: 99;
+  opacity: 1;
+  padding: 90px 0 0;
+}
+.config .config-container input.config-item#tab6:checked ~ .line {
+  display: none;
+}
+.config .config-container input.config-item#tab6:checked ~ .content-container #c6 {
+  z-index: 99;
+  opacity: 1;
+  padding: 90px 0 0;
+}
+.config .config-container label {
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  width: 16%;
+  text-align: center;
+  color: #555;
+  position: relative;
+  transition: 0.25s background ease;
+  cursor: pointer;
+}
+.config .config-container label::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background: #ccc;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  transition: 0.25s ease;
+}
+.config .config-container label:hover::after {
+  opacity: 1;
+}
+.config .config-container .line {
+  position: absolute;
+  height: 2px;
+  background: var(--primary-text-color);
+  width: 16%;
+  top: 34px;
+  left: 0;
+  transition: 0.25s ease;
+}
+.config .config-container .content-container {
+  position: relative;
+  height: 800px;
+  font-size: 16px;
+}
+.config .config-container .content-container .content {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: 0.25s ease;
+  color: #333;
+}
+.config .config-container .content-container .content h3 {
+  font-weight: 200;
+  margin: 10px 0;
+}
+.config .config-container .content-container .content p {
+  margin: 10px 0;
+}
+.config .config-container .content-container .content p,
+.config .config-container .content-container .content i {
+  font-size: 16px;
+}
+.config .config-container .content-container .price-thumb {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.config .config-container .content-container .price {
+  display: flex;
+  gap: 24px;
+}
+.config .config-container .content-container .price__number {
+  font-weight: 900;
+}
+
+.content-options h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.content-options .options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.content-options .option-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.content-options .options img {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+.content-options .options img.selected {
+  border-color: #333;
+}
+.content-options #preview {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+.layout .layout-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.layout .section-title {
+  text-align: start;
+  font-size: 32px;
+}
+.layout .layout-box {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.layout .layout-plan {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.layout .layout-plan img {
+  width: 100%;
+}
+.layout .layout-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.layout .layout-images .layout-img {
+  width: 48%;
+}
+.layout .layout-images img {
+  width: 100%;
+}
+.layout .layout-info {
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.layout .layout-info {
+  border-bottom: 2px solid var(--light-grey-color);
+}
+
+.layout-box div {
+  margin-bottom: 12px;
+}
+
 @media screen and (max-width: 1339px) {
   .hero__section {
     margin-top: 0;

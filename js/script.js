@@ -55,3 +55,55 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(updateCardNumberFromIndicators, 10);
   });
 });
+
+function imageClick(imageNumber) {
+  setTimeout(() => {
+    //Find the slider element
+    const sliderElement = document.getElementById("pgalleryModal");
+    //Slide to he right image
+    swiffyslider.slideTo(sliderElement, imageNumber);
+    //Listen to slide end and set focus to the container to enable keyboard navigation
+    swiffyslider.onSlideEnd(sliderElement, () =>
+      sliderElement.querySelector(".slider-container").focus()
+    );
+  }, 300);
+}
+
+function thumbHover(imageNumber) {
+  //Find the slider element
+  const sliderElement = document.getElementById("pgallery");
+  //Slide to he right image
+  swiffyslider.slideTo(sliderElement, imageNumber);
+}
+
+// config
+
+const selectedOptions = {
+  roof: "roof1",
+  outdoors: "outdoors1",
+  walls: "walls1",
+  windows: "windows1",
+};
+
+const previewImg = document.getElementById("preview");
+const optionGroups = document.querySelectorAll(".options");
+
+optionGroups.forEach((group) => {
+  const category = group.dataset.category;
+  const images = group.querySelectorAll("img");
+
+  images.forEach((img) => {
+    img.addEventListener("click", () => {
+      // оновити вибір
+      selectedOptions[category] = img.dataset.value;
+
+      // підсвітка вибраного
+      images.forEach((i) => i.classList.remove("selected"));
+      img.classList.add("selected");
+
+      // сформувати шлях до картинки-прев'ю
+      const path = `/images/${selectedOptions.roof}_${selectedOptions.outdoors}_${selectedOptions.walls}_${selectedOptions.windows}.jpg`;
+      previewImg.src = path;
+    });
+  });
+});
