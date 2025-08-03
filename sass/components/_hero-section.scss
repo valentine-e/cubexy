@@ -1594,6 +1594,7 @@ button.primary-button {
   }
 
   .models-section {
+    margin-top: 120px;
     .primary-button {
       width: 100%;
     }
@@ -1619,6 +1620,13 @@ button.primary-button {
   }
   .contact__link.main-text {
     font-size: 16px;
+  }
+
+  .howto__section {
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
