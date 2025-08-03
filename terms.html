@@ -22,33 +22,33 @@
     <!-- Header -->
     <div class="site-wrapper">
         <header id="header" class="page-header">
-            <div>
-                <div class="container header__container">
+            <div class="container">
+                <div class=" header__container">
                     <nav class="main-nav">
-                        <a class="header__logo" href="./index.html">
+                        <a class="header__logo mobile-none" href="./index.html">
                             <img class="" src="./images/cubexy_logo.svg" alt="" />
                         </a>
-                        <a class="header__logo--mobile" href="./index.html">
-                            <img class="header__logo--width" src="./images/cubexy_logo.svg" alt="" />
+                        <a class="header__logo desk-none" href="./index.html">
+                            <img class="header__logo" src="./images/cubexy_logo.svg" alt="" />
                         </a>
-                        <button class="header__button" data-menu-button aria-expanded="false"
+                        <button class="header__button " data-menu-button aria-expanded="false"
                             aria-controls="mobile-menu">
-                            <svg class="header__button--size" width="35" height="35" preserveAspectRatio="xMidYMid meet"
+                            <svg class="header__button--size" width="40" height="40" preserveAspectRatio="xMidYMid meet"
                                 viewBox="0 0 15 15">
                                 <path fill="currentColor" fill-rule="evenodd"
                                     d="M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1h-12ZM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Zm0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Z"
                                     clip-rule="evenodd" />
                             </svg>
                         </button>
+                        <button class="header__button header__button--close " aria-expanded="false"
+                            aria-controls="mobile-menu" data-menu-button>
+                            <svg width="" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                    d="M20 20L4 4m16 0L4 20" />
+                            </svg>
+                        </button>
                         <!-- button  -->
-                        <ul class="site-nav" data-menu>
-                            <button class="header__button header__button--close" aria-expanded="false"
-                                aria-controls="mobile-menu" data-menu-button>
-                                <svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                                        d="M20 20L4 4m16 0L4 20" />
-                                </svg>
-                            </button>
+                        <ul class="site-nav " data-menu>
                             <li class="site-nav__item">
                                 <a class=" site-nav__link" href="./models.html">Our Models </a>
                             </li>
@@ -231,7 +231,7 @@
                             <a class="footer-nav__link " href="./privacy.html">Privacy Policy </a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="./licenses.html">Licenses</a>
+                            <a class="footer-nav__link " href="./privacy.html">Licenses</a>
                         </li>
                     </ul>
                     <a class=" footer-nav__item footer-nav__title" href="#">About us</a>

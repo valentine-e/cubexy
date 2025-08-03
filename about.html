@@ -22,40 +22,40 @@
     <!-- Header -->
     <div class="site-wrapper">
         <header id="header" class="page-header">
-            <div>
-                <div class="container header__container">
+            <div class="container">
+                <div class=" header__container">
                     <nav class="main-nav">
-                        <a class="header__logo" href="./index.html">
+                        <a class="header__logo mobile-none" href="./index.html">
                             <img class="" src="./images/cubexy_logo.svg" alt="" />
                         </a>
-                        <a class="header__logo--mobile" href="./index.html">
-                            <img class="header__logo--width" src="./images/cubexy_logo.svg" alt="" />
+                        <a class="header__logo desk-none" href="./index.html">
+                            <img class="header__logo" src="./images/cubexy_logo.svg" alt="" />
                         </a>
-                        <button class="header__button" data-menu-button aria-expanded="false"
+                        <button class="header__button " data-menu-button aria-expanded="false"
                             aria-controls="mobile-menu">
-                            <svg class="header__button--size" width="35" height="35" preserveAspectRatio="xMidYMid meet"
+                            <svg class="header__button--size" width="40" height="40" preserveAspectRatio="xMidYMid meet"
                                 viewBox="0 0 15 15">
                                 <path fill="currentColor" fill-rule="evenodd"
                                     d="M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1h-12ZM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Zm0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5Z"
                                     clip-rule="evenodd" />
                             </svg>
                         </button>
+                        <button class="header__button header__button--close " aria-expanded="false"
+                            aria-controls="mobile-menu" data-menu-button>
+                            <svg width="" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                    d="M20 20L4 4m16 0L4 20" />
+                            </svg>
+                        </button>
                         <!-- button  -->
-                        <ul class="site-nav" data-menu>
-                            <button class="header__button header__button--close" aria-expanded="false"
-                                aria-controls="mobile-menu" data-menu-button>
-                                <svg width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                                        d="M20 20L4 4m16 0L4 20" />
-                                </svg>
-                            </button>
+                        <ul class="site-nav " data-menu>
                             <li class="site-nav__item">
                                 <a class=" site-nav__link" href="./models.html">Our Models </a>
                             </li>
                             <li class="site-nav__item">
                                 <a class=" site-nav__link" href="./how-it-works.html">How It Works</a>
                             </li>
-                            <li class="site-nav__item active">
+                            <li class="site-nav__item">
                                 <a class=" site-nav__link" href="./about.html">About</a>
                             </li>
                             <li class="site-nav__item">
@@ -70,6 +70,8 @@
         <section class="hero__section hero-about">
             <div class="container">
                 <div class="hero__content ">
+                    <div class="hero__image--mob desk-none"><img src="./images/hero-about-mobile.png"
+                            alt="model illustration" /></div>
                     <h1 id="hero-section" class="hero__title"> Smart Living, Beautifully Built.</h1>
                     <p class="main-text hero__text"> Modular ADUs for modern lifestyles — crafted with precision,
                         designed for comfort. <br> Cubexy is a design-forward ADU company on a mission to redefine small
@@ -78,7 +80,8 @@
                         build it fast, affordably, and sustainably.</p>
                 </div>
             </div>
-            <div class="hero__image"><img src="./images/hero-about.png" alt="model illustration" width="600" /></div>
+            <div class="hero__image mobile-none"><img src="./images/hero-about.png" alt="model illustration"
+                    width="600" /></div>
         </section>
         <!-- Advantages Section-->
         <section class="advantages__section advantages__about">
@@ -103,13 +106,14 @@
                             disruption to your property.</p>
                     </li>
                 </ul>
-            </div>
-            <div class="howto__call">
-                <h3 class="section-title">Built for How You Live Today</h3>
-                <p class="main-text">YAt Cubexy, we believe your home should adapt to you — not the other way around.
-                    Whether you're accommodating aging parents, launching a rental business, or simply craving a quiet
-                    escape in your backyard, our ADUs are built to serve real people with real needs. Every square meter
-                    is designed with intention, making compact living not just possible, but truly enjoyable.</p>
+                <div class="howto__call">
+                    <h3 class="section-title">Built for How You Live Today</h3>
+                    <p class="main-text">YAt Cubexy, we believe your home should adapt to you — not the other way
+                        around. Whether you're accommodating aging parents, launching a rental business, or simply
+                        craving a quiet escape in your backyard, our ADUs are built to serve real people with real
+                        needs. Every square meter is designed with intention, making compact living not just possible,
+                        but truly enjoyable.</p>
+                </div>
             </div>
         </section>
         <section class="team">
@@ -194,36 +198,33 @@
                     </div>
                     <ul class="footer-nav__list ">
                         <li class="footer-nav__item">
-                            <a class="footer-nav__title">Software</a>
+                            <a class="footer-nav__title">Our Models</a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#tariff-plans">Tariffs </a>
+                            <a class="footer-nav__link " href="#tariff-plans">A-Frame</a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#integrations">Integrations </a>
+                            <a class="footer-nav__link " href="#integrations">Tiny House </a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#how-to-use">How to Use? </a>
+                            <a class="footer-nav__link " href="#how-to-use">Cottage </a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#how-cubexy-works">How it actually works?</a>
+                            <a class="footer-nav__link " href="#how-cubexy-works">Ranch</a>
                         </li>
                     </ul>
                     <ul class="footer-nav__list ">
                         <li class="footer-nav__item">
-                            <a class="footer-nav__title">Resources</a>
+                            <a class="footer-nav__title">Documentation</a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#">Documentation </a>
+                            <a class="footer-nav__link " href="./terms.html">Terms of Service </a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#form">Support </a>
+                            <a class="footer-nav__link " href="./privacy.html">Privacy Policy </a>
                         </li>
                         <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#">Contribute </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a class="footer-nav__link " href="#">GitHub?</a>
+                            <a class="footer-nav__link " href="./privacy.html">Licenses</a>
                         </li>
                     </ul>
                     <a class=" footer-nav__item footer-nav__title" href="#">About us</a>
