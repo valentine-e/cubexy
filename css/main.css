@@ -151,7 +151,6 @@ body {
 .page-header {
   position: relative;
   z-index: 2;
-  margin-bottom: 90px;
 }
 
 .header__container {
@@ -181,8 +180,8 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 20px;
-  height: 1px;
+  bottom: 30px;
+  height: 2px;
   width: 0%;
   background-color: var(--primary-text-color);
   color: var(--primary-text-color);
@@ -207,6 +206,13 @@ body {
   border: 2px solid var(--light-grey-color);
 }
 
+.site-nav__item.active .site-nav__link {
+  color: var(--light-grey-color);
+}
+.site-nav__item.active .site-nav__link::after {
+  width: 100%;
+}
+
 .site-nav__item.active > .site-nav__link {
   color: var(--light-grey-color);
 }
@@ -223,6 +229,8 @@ body {
 }
 
 .header__button {
+  width: 40px;
+  height: 40px;
   display: none;
 }
 
@@ -235,7 +243,6 @@ body {
     position: fixed;
     background-color: var(--primary-background-color);
     width: 100%;
-    margin-bottom: 40px;
   }
   .header__button {
     display: block;
@@ -261,7 +268,7 @@ body {
     flex-direction: column;
     justify-content: start;
     position: fixed;
-    top: 90px;
+    top: 80px;
     right: 0;
     background-color: var(--primary-background-color);
     padding: 60px 60px;
@@ -279,7 +286,6 @@ body {
   }
   .header__button {
     display: block;
-    padding: 15px;
     background-color: transparent;
     border: none;
     color: var(--primary-text-color);
@@ -287,17 +293,12 @@ body {
   }
   .header__button:hover {
     color: var(--accent-color);
-    transform: scale(1.3);
-  }
-  .header__button--close {
-    align-self: flex-end;
   }
 }
 .hero__section {
   position: relative;
   z-index: 1;
   padding: 10% 0 20%;
-  margin-top: 96px;
 }
 
 .hero__content {
@@ -348,6 +349,7 @@ body {
 .models__list {
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
 }
 
 .models__item {
@@ -522,7 +524,7 @@ body {
 }
 
 .slider-indicators > * {
-  width: 15rem;
+  width: 217px;
   opacity: 0.1;
 }
 
@@ -543,7 +545,7 @@ body {
 .card-label {
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   color: var(--accent-color);
   font-size: 24px;
   font-weight: 700;
@@ -746,6 +748,7 @@ button.primary-button {
 }
 
 .howto__section {
+  margin-top: 96px;
   margin-bottom: 96px;
 }
 .howto__section .main-text {
@@ -756,6 +759,7 @@ button.primary-button {
   height: 417px;
 }
 .howto__section .section-title {
+  margin-bottom: 8px;
   text-align: start;
 }
 .howto__section .howto__intro {
@@ -785,10 +789,6 @@ button.primary-button {
 
 .hero-about .hero__content {
   width: 47%;
-}
-
-.hero__section {
-  margin-top: 140px;
 }
 
 .hero__section.hero-about {
@@ -958,7 +958,8 @@ button.primary-button {
 }
 
 .hero-model.hero__section {
-  padding: 5% 0;
+  margin-top: 96px;
+  padding: 0;
 }
 
 .hero-model .models__item {
@@ -977,6 +978,7 @@ button.primary-button {
 }
 
 .config {
+  margin-top: 288px;
   margin-bottom: 96px;
 }
 .config .section-title {
@@ -1169,12 +1171,15 @@ button.primary-button {
 }
 .layout .section-title {
   text-align: start;
-  font-size: 32px;
+  font-size: 24px;
 }
 .layout .layout-box {
   width: 49%;
   display: flex;
   flex-direction: column;
+}
+.layout .layout-box:first-child {
+  width: 62%;
 }
 .layout .layout-plan {
   width: 100%;
@@ -1189,28 +1194,55 @@ button.primary-button {
   gap: 24px;
 }
 .layout .layout-images .layout-img {
-  width: 47%;
+  width: 48%;
 }
 .layout .layout-images img {
   width: 100%;
 }
 .layout .layout-info {
-  padding-bottom: 24px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.layout .layout-info {
-  border-bottom: 2px solid var(--light-grey-color);
-}
 
 .layout-box div.mt {
-  margin-top: 12px;
+  padding-top: 40px;
+  border-top: 2px solid var(--light-grey-color);
+}
+
+.swiffy-slider.slider-nav-autohide.slider-item-first-visible .slider-nav:not(.slider-nav-next) {
+  visibility: visible;
+  opacity: 0.2;
+  cursor: inherit;
+}
+
+.swiffy-slider.slider-nav-autohide.slider-item-last-visible .slider-nav.slider-nav-next {
+  visibility: visible;
+  opacity: 0.2;
+  cursor: inherit;
+}
+
+.hero-model .slider-nav-round {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  width: 58%;
+}
+
+.hero-model .slider-nav-chevron {
+  bottom: -620px;
+  width: 140%;
+  right: 253px;
+}
+
+.swiffy-slider__aframe {
+  display: none;
 }
 
 @media screen and (max-width: 1339px) {
   .hero__section {
-    margin-top: 0;
+    margin-top: 40px;
   }
   .hero__section.hero-about {
     padding: 0 0;
@@ -1250,7 +1282,7 @@ button.primary-button {
 }
 @media screen and (max-width: 1023px) {
   .hero__section {
-    top: 120px;
+    top: 100px;
   }
   .hero__section.hero-about .hero__image {
     top: 170px;
@@ -1273,6 +1305,7 @@ button.primary-button {
     width: 100%;
   }
   .models__list {
+    width: 100%;
     gap: 36px;
   }
   .models__list > :nth-child(1):after {
@@ -1286,7 +1319,7 @@ button.primary-button {
   }
   .models-label {
     width: fit-content;
-    margin: 0 auto 32px;
+    margin: 0 auto 16px;
   }
   .models-info p {
     text-align: center;
@@ -1296,6 +1329,7 @@ button.primary-button {
   }
   .models-section .section-subtitle {
     text-align: center;
+    margin-bottom: 16px;
   }
   .slider-section .card-title {
     font-size: 36px;
@@ -1336,6 +1370,7 @@ button.primary-button {
   }
   .slider-section .card-label {
     justify-content: start;
+    display: none;
   }
   .slider-section .card-content {
     padding-top: 80px;
@@ -1352,7 +1387,7 @@ button.primary-button {
   }
   .footer {
     padding: 140px 0 96px;
-    margin-top: 360px;
+    margin-top: 310px;
   }
   .footer-nav__thumb {
     width: 100%;
@@ -1378,16 +1413,24 @@ button.primary-button {
   }
   .howto__section .section-title {
     text-align: start;
-    margin-top: 140px;
+    margin-top: 120px;
   }
   .howto__section .main-text {
     font-size: 16px;
+    margin-bottom: 16px;
   }
   .howto__section .section-title {
     font-size: 24px;
   }
+  .howto__section .howto_list {
+    gap: 24px;
+  }
   .howto__section .ho_wto__item {
     flex-direction: column;
+    gap: 16px;
+  }
+  .howto__section .section-subtitle {
+    margin-bottom: 16px;
   }
   .howto__section .howto__intro {
     width: fit-content;
@@ -1400,6 +1443,16 @@ button.primary-button {
   }
   .howto__section .primary-button {
     margin: 0 auto;
+  }
+  .howto__section .howto__call .primary-button {
+    order: 1;
+    margin-bottom: 32px;
+  }
+  .howto__section .howto__call .section-subtitle {
+    order: 2;
+  }
+  .howto__section .howto__call .main-text {
+    order: 3;
   }
   .advantages__about .advantages__list {
     flex-direction: column;
@@ -1489,11 +1542,39 @@ button.primary-button {
     font-size: 14px;
   }
   .layout .layout-info {
-    gap: 8px;
-    padding-bottom: 16px;
+    gap: 4px;
+    padding-bottom: 8px;
+  }
+  .layout .layout-box:first-child {
+    width: 100%;
+  }
+  .layout .layout-box div.mt {
+    padding-top: 16px;
+  }
+  .swiffy-slider__aframe {
+    display: block;
+  }
+  .swiffy-slider__aframe .slider-indicators > * {
+    background-color: var(--primary-text-color);
+    opacity: 0.2;
+  }
+  .swiffy-slider__aframe .slider-indicators > .active {
+    opacity: 1;
+    color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
+  .swiffy-slider__aframe .slider-container img {
+    width: 420px;
+    margin: 0 auto;
+  }
+  .advantages__section.advantages__about {
+    margin: 146px 0 40px 0;
   }
 }
 @media screen and (max-width: 767px) {
+  .swiffy-slider__aframe .slider-container img {
+    width: 100%;
+  }
   .models__thumb img {
     width: 100%;
     margin-bottom: 24px;
@@ -1529,19 +1610,19 @@ button.primary-button {
     margin: 0 0 32px;
   }
   .hero__section .hero__image--mob {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
   }
   .hero__section .hero__image--mob img {
     width: 100%;
   }
   .hero__section .hero__title {
-    margin: 0 0 36px;
+    margin: 0 0 16px;
   }
   .hero__section .hero__text {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
   }
   .hero__section.hero-about {
-    padding: 0 0;
+    margin: 40px 0;
   }
   .hero__buttons {
     flex-wrap: wrap;
@@ -1568,6 +1649,8 @@ button.primary-button {
   }
   .advantages__item {
     width: 100%;
+    padding: 24px;
+    gap: 16px;
   }
   .advantages__section .primary-button {
     width: 100%;
@@ -1584,6 +1667,10 @@ button.primary-button {
   .advantages__about .advantages__item p {
     font-size: 16px;
   }
+  .slider-section .section-title {
+    text-align: start;
+    font-size: 40px;
+  }
   .slider-section .card-img-box {
     width: 100%;
     margin: 0 auto;
@@ -1591,14 +1678,26 @@ button.primary-button {
   .slider-section .card-text {
     font-size: 16px;
   }
+  .slider-section .swiffy-slider.slider-indicators-outside .slider-indicators,
+  .slider-section .swiffy-slider.slider-indicators-outside.slider-indicators {
+    gap: 24px;
+  }
+  .slider-section .slider-indicators > * {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+  }
   .models-section {
-    margin-top: 180px;
+    margin-top: 150px;
   }
   .models-section .primary-button {
     width: 100%;
   }
   .team-item {
     flex-direction: column;
+  }
+  .team-item .main-text {
+    line-height: 48px;
   }
   .team .section-title {
     font-size: 24px;
