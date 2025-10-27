@@ -310,12 +310,12 @@ body {
 
 .models__item:nth-child(odd) {
   width: 50%;
-  padding: 36px 0 36px 36px;
+  padding: 24px 0 24px 24px;
 }
 
 .models__item:nth-child(even) {
   width: 50%;
-  padding: 36px 0 36px 36px;
+  padding: 24px 0 24px 24px;
 }
 
 .models__thumb {
@@ -324,7 +324,7 @@ body {
   align-items: center;
 
   img {
-    width: 50%;
+    width: 45%;
   }
 
   .models__info {
@@ -346,14 +346,12 @@ body {
   align-items: center;
   padding: 5px 24px;
   gap: 10px;
-
   border: 2px solid #d9d9d9;
   border-radius: 80px;
-
   font-size: 18px;
   color: var(--primary-text-color);
   font-weight: 400;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   white-space: nowrap;
 }
 
@@ -398,7 +396,7 @@ body {
 }
 
 .models-section .primary-button {
-  margin: 40px auto 0;
+  margin: 24px auto 0;
 }
 
 .advantages__section {
@@ -451,7 +449,7 @@ body {
 .slider-section {
   margin-bottom: 96px;
   .card-title {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 400;
     margin-bottom: 40px;
   }
@@ -462,7 +460,7 @@ body {
 
   .card-text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
     color: var(--primary-text-color);
   }
@@ -482,13 +480,13 @@ body {
 
   .primary-button {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     right: 0;
   }
 }
 .slider-indicators {
   position: inherit;
-  bottom: -60px;
+  // bottom: -60px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -512,7 +510,7 @@ body {
 
 .slider-nav {
   top: inherit;
-  bottom: 130px;
+  bottom: 170px;
 }
 
 .card-label {
@@ -537,7 +535,7 @@ body {
 .card-content {
   width: 48%;
   position: relative;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .slider-nav {
@@ -1082,6 +1080,9 @@ button.primary-button {
 
   .slider-item-ratio .slider-container > * > * {
     height: auto;
+    left: inherit;
+    right: 0;
+    width: 90%;
   }
 
   .slider-nav-round .slider-nav-outside-expand {
@@ -1328,15 +1329,16 @@ button.primary-button {
 
 .hero-model .slider-nav-round {
   position: absolute;
-  top: -80px;
+  top: 0px;
   right: 0;
-  width: 58%;
+  width: 55%;
 }
 
 .hero-model .slider-nav-chevron {
-  bottom: -620px;
-  width: 140%;
-  right: 253px;
+  position: absolute;
+  bottom: -31%;
+  width: 59%;
+  right: 5%;
 }
 
 .swiffy-slider__aframe {
@@ -1352,7 +1354,7 @@ button.primary-button {
   display: none;
 }
 
-@media screen and (max-width: 1339px) {
+@media screen and (max-width: 1439px) {
   .hero__section.hero-about {
     padding: 0 0;
     .hero__image {
