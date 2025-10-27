@@ -315,7 +315,7 @@ body {
 }
 
 .hero__content {
-  width: 41%;
+  width: 42%;
 }
 
 .hero__image {
@@ -331,7 +331,7 @@ body {
 
 .hero__title {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 36px;
   margin: 0 0 40px;
 }
 
