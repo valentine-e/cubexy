@@ -1210,6 +1210,7 @@ button.primary-button {
       .price-thumb {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 90px;
       }
       .price {
@@ -2010,12 +2011,26 @@ button.primary-button {
       width: 100%;
     }
   }
-
+  .config .config-container .content-container .price {
+    flex-direction: column;
+    gap: 0;
+  }
   .config {
     margin-bottom: 330px;
 
+    .price-thumb .price {
+      .price__label {
+        font-size: 14px;
+      }
+
+      .price__number {
+        font-size: 14px;
+      }
+    }
+
     .config-container label {
-      white-space: pre-wrap;
+      font-size: 14px;
+      white-space: nowrap;
       width: 33%;
     }
 
@@ -2036,9 +2051,14 @@ button.primary-button {
       display: block;
 
       .slider-nav {
-        bottom: -80px;
+        bottom: -210px;
         font-size: 70px;
-        bottom: -40px;
+        left: 160px;
+      }
+
+      .slider-nav.slider-nav-next {
+        left: auto;
+        right: 120px;
       }
 
       .slider-nav::after {

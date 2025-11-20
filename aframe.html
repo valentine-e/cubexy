@@ -458,7 +458,6 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <!-- ====== SLIDE 4 — WINDOWS ====== -->
                                             <li>
                                                 <h2>Window Frames</h2>
                                                 <div class="options" data-category="windows">
@@ -838,5 +837,61 @@
     <script src="./js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
         defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const slider = document.querySelector(".swiffy-slider");
+            const slides = slider.querySelectorAll(".slider-container > li");
+
+            const prevBtn = slider.querySelector(".slider-nav:not(.slider-nav-next)");
+            const nextBtn = slider.querySelector(".slider-nav-next");
+            const nextPageBtn = document.querySelector(".primary-button");
+
+            const total = slides.length;
+
+            function getActiveIndex() {
+                const active = slider.querySelector(".slider-container > li.active");
+                return [...slides].indexOf(active);
+            }
+
+            function updateUI() {
+                const index = getActiveIndex();
+
+                const isFirst = index === 0;
+                const isLast = index === total - 1;
+
+                // ⬅️ Кнопка "назад"
+                if (isFirst) {
+                    prevBtn.disabled = true;
+                    prevBtn.style.opacity = "0.3";
+                    prevBtn.style.pointerEvents = "none";
+                } else {
+                    prevBtn.disabled = false;
+                    prevBtn.style.opacity = "1";
+                    prevBtn.style.pointerEvents = "auto";
+                }
+
+                // ➡️ Кнопка "вперед"
+                if (isLast) {
+                    nextBtn.style.display = "none";        // ховаємо стрілку
+                    nextPageBtn.style.display = "inline-flex"; // показуємо кнопку Next
+                } else {
+                    nextBtn.style.display = "inline-flex"; // показуємо стрілку
+                    nextPageBtn.style.display = "none";    // ховаємо кнопку Next
+                }
+            }
+
+            // Слухаємо кліки на обидві стрілки
+            prevBtn.addEventListener("click", () => setTimeout(updateUI, 50));
+            nextBtn.addEventListener("click", () => setTimeout(updateUI, 50));
+
+            // Спостерігач стежить за присвоєнням класу active Swiffy Slider'ом
+            const obs = new MutationObserver(updateUI);
+            obs.observe(slider, { subtree: true, attributes: true, attributeFilter: ["class"] });
+
+            // Початковий стан
+            updateUI();
+        });
+    </script>
 </body>
 </html>

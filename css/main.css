@@ -1260,6 +1260,7 @@ button.primary-button {
 .config .config-container .content-container .price-thumb {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 90px;
 }
 .config .config-container .content-container .price {
@@ -1897,11 +1898,22 @@ button.primary-button {
   .hero-model_thumb .hero-image {
     width: 100%;
   }
+  .config .config-container .content-container .price {
+    flex-direction: column;
+    gap: 0;
+  }
   .config {
     margin-bottom: 330px;
   }
+  .config .price-thumb .price .price__label {
+    font-size: 14px;
+  }
+  .config .price-thumb .price .price__number {
+    font-size: 14px;
+  }
   .config .config-container label {
-    white-space: pre-wrap;
+    font-size: 14px;
+    white-space: nowrap;
     width: 33%;
   }
   .config .content-options .options {
@@ -1918,9 +1930,13 @@ button.primary-button {
     display: block;
   }
   .config .content-options.content-options__mob .slider-nav {
-    bottom: -80px;
+    bottom: -210px;
     font-size: 70px;
-    bottom: -40px;
+    left: 160px;
+  }
+  .config .content-options.content-options__mob .slider-nav.slider-nav-next {
+    left: auto;
+    right: 120px;
   }
   .config .content-options.content-options__mob .slider-nav::after {
     content: "‹";
