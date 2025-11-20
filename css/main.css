@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .primary-button {
   /* Auto layout */
   display: flex;
@@ -1300,6 +1301,10 @@ button.primary-button {
   object-fit: cover;
 }
 
+.content-options.content-options__mob {
+  display: none;
+}
+
 .layout .layout-content {
   display: flex;
   justify-content: space-between;
@@ -1905,6 +1910,25 @@ button.primary-button {
   .config .content-options .option-box {
     width: 40%;
     gap: 20px;
+  }
+  .config .content-options.content-options__desk {
+    display: none;
+  }
+  .config .content-options.content-options__mob {
+    display: block;
+  }
+  .config .content-options.content-options__mob .slider-nav {
+    bottom: -80px;
+    font-size: 70px;
+    bottom: -40px;
+  }
+  .config .content-options.content-options__mob .slider-nav::after {
+    content: "‹";
+    font-size: 40px;
+  }
+  .config .content-options.content-options__mob .slider-nav-next::after {
+    content: "›";
+    font-size: 40px;
   }
   .aframe-thumb {
     flex-direction: column;

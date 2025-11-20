@@ -1257,7 +1257,9 @@ button.primary-button {
     object-fit: cover;
   }
 }
-
+.content-options.content-options__mob {
+  display: none;
+}
 .layout {
   .layout-content {
     display: flex;
@@ -2024,6 +2026,30 @@ button.primary-button {
     .content-options .option-box {
       width: 40%;
       gap: 20px;
+    }
+
+    .content-options.content-options__desk {
+      display: none;
+    }
+
+    .content-options.content-options__mob {
+      display: block;
+
+      .slider-nav {
+        bottom: -80px;
+        font-size: 70px;
+        bottom: -40px;
+      }
+
+      .slider-nav::after {
+        content: "‹";
+        font-size: 40px;
+      }
+
+      .slider-nav-next::after {
+        content: "›";
+        font-size: 40px;
+      }
     }
   }
 
