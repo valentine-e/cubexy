@@ -1261,7 +1261,7 @@ button.primary-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 .config .config-container .content-container .price {
   display: flex;
@@ -1930,7 +1930,7 @@ button.primary-button {
     display: block;
   }
   .config .content-options.content-options__mob .slider-nav {
-    bottom: -210px;
+    bottom: -150px;
     font-size: 70px;
     left: 160px;
   }
