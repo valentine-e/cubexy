@@ -1319,14 +1319,14 @@ button.primary-button {
 .swiffy-slider.slider-nav-autohide.slider-item-first-visible
   .slider-nav:not(.slider-nav-next) {
   visibility: visible;
-  opacity: 0.2;
+  opacity: 0;
   cursor: inherit;
 }
 
 .swiffy-slider.slider-nav-autohide.slider-item-last-visible
   .slider-nav.slider-nav-next {
   visibility: visible;
-  opacity: 0.2;
+  opacity: 0;
   cursor: inherit;
 }
 
