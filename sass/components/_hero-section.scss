@@ -1132,7 +1132,7 @@ button.primary-button {
       @for $i from 1 through 6 {
         &#tab#{$i}:checked {
           ~ .line {
-            // left: #{($i - 1) * 16%};
+            left: #{($i - 1) * 16%};
             display: none;
           }
           ~ .content-container #c#{$i} {
@@ -1355,6 +1355,52 @@ button.primary-button {
 
 .hero__image--mob img {
   display: none;
+}
+
+.config .config-content {
+  position: unset;
+}
+
+.config .config-container .content-container .content {
+  display: none;
+  position: unset;
+}
+
+.config .config-container .content-container {
+  position: unset;
+}
+
+.config
+  .config-container
+  input.config-item#tab1:checked
+  ~ .content-container
+  #c1,
+.config
+  .config-container
+  input.config-item#tab2:checked
+  ~ .content-container
+  #c2,
+.config
+  .config-container
+  input.config-item#tab3:checked
+  ~ .content-container
+  #c3,
+.config
+  .config-container
+  input.config-item#tab4:checked
+  ~ .content-container
+  #c4,
+.config
+  .config-container
+  input.config-item#tab5:checked
+  ~ .content-container
+  #c5,
+.config
+  .config-container
+  input.config-item#tab6:checked
+  ~ .content-container
+  #c6 {
+  display: block;
 }
 
 @media screen and (max-width: 1439px) {
@@ -1787,7 +1833,8 @@ button.primary-button {
     }
 
     .section-title {
-      font-size: 16px;
+      text-align: center;
+      font-size: 24px;
       margin-bottom: 16px;
     }
 
@@ -1853,10 +1900,60 @@ button.primary-button {
       }
     }
 
+    .section-title {
+      text-align: center;
+    }
+
     .config-container {
       width: 100%;
     }
   }
+
+  // .config .config-content {
+  //   position: unset;
+  // }
+
+  // .config .config-container .content-container .content {
+  //   display: none;
+  //   position: unset;
+  // }
+
+  // .config .config-container .content-container {
+  //   position: unset;
+  // }
+
+  // .config
+  //   .config-container
+  //   input.config-item#tab1:checked
+  //   ~ .content-container
+  //   #c1,
+  // .config
+  //   .config-container
+  //   input.config-item#tab2:checked
+  //   ~ .content-container
+  //   #c2,
+  // .config
+  //   .config-container
+  //   input.config-item#tab3:checked
+  //   ~ .content-container
+  //   #c3,
+  // .config
+  //   .config-container
+  //   input.config-item#tab4:checked
+  //   ~ .content-container
+  //   #c4,
+  // .config
+  //   .config-container
+  //   input.config-item#tab5:checked
+  //   ~ .content-container
+  //   #c5,
+  // .config
+  //   .config-container
+  //   input.config-item#tab6:checked
+  //   ~ .content-container
+  //   #c6 {
+  //   display: block;
+  // }
 }
 
 @media screen and (max-width: 767px) {
@@ -2029,7 +2126,7 @@ button.primary-button {
   }
 
   .config {
-    margin-bottom: 0;
+    margin-bottom: 40px;
     margin-top: 0;
     .price-thumb .price {
       .price__label {

@@ -1148,6 +1148,7 @@ button.primary-button {
   z-index: 9;
 }
 .config .config-container input.config-item#tab1:checked ~ .line {
+  left: 0%;
   display: none;
 }
 .config .config-container input.config-item#tab1:checked ~ .content-container #c1 {
@@ -1156,6 +1157,7 @@ button.primary-button {
   padding: 40px 0 0;
 }
 .config .config-container input.config-item#tab2:checked ~ .line {
+  left: 16%;
   display: none;
 }
 .config .config-container input.config-item#tab2:checked ~ .content-container #c2 {
@@ -1164,6 +1166,7 @@ button.primary-button {
   padding: 40px 0 0;
 }
 .config .config-container input.config-item#tab3:checked ~ .line {
+  left: 32%;
   display: none;
 }
 .config .config-container input.config-item#tab3:checked ~ .content-container #c3 {
@@ -1172,6 +1175,7 @@ button.primary-button {
   padding: 40px 0 0;
 }
 .config .config-container input.config-item#tab4:checked ~ .line {
+  left: 48%;
   display: none;
 }
 .config .config-container input.config-item#tab4:checked ~ .content-container #c4 {
@@ -1180,6 +1184,7 @@ button.primary-button {
   padding: 40px 0 0;
 }
 .config .config-container input.config-item#tab5:checked ~ .line {
+  left: 64%;
   display: none;
 }
 .config .config-container input.config-item#tab5:checked ~ .content-container #c5 {
@@ -1188,6 +1193,7 @@ button.primary-button {
   padding: 40px 0 0;
 }
 .config .config-container input.config-item#tab6:checked ~ .line {
+  left: 80%;
   display: none;
 }
 .config .config-container input.config-item#tab6:checked ~ .content-container #c6 {
@@ -1389,6 +1395,28 @@ button.primary-button {
 
 .hero__image--mob img {
   display: none;
+}
+
+.config .config-content {
+  position: unset;
+}
+
+.config .config-container .content-container .content {
+  display: none;
+  position: unset;
+}
+
+.config .config-container .content-container {
+  position: unset;
+}
+
+.config .config-container input.config-item#tab1:checked ~ .content-container #c1,
+.config .config-container input.config-item#tab2:checked ~ .content-container #c2,
+.config .config-container input.config-item#tab3:checked ~ .content-container #c3,
+.config .config-container input.config-item#tab4:checked ~ .content-container #c4,
+.config .config-container input.config-item#tab5:checked ~ .content-container #c5,
+.config .config-container input.config-item#tab6:checked ~ .content-container #c6 {
+  display: block;
 }
 
 @media screen and (max-width: 1439px) {
@@ -1726,7 +1754,8 @@ button.primary-button {
     margin-bottom: 0;
   }
   .layout .section-title {
-    font-size: 16px;
+    text-align: center;
+    font-size: 24px;
     margin-bottom: 16px;
   }
   .layout .main-text {
@@ -1776,6 +1805,9 @@ button.primary-button {
   .config .config-img img {
     max-width: 420px;
     margin: 0 auto;
+  }
+  .config .section-title {
+    text-align: center;
   }
   .config .config-container {
     width: 100%;
@@ -1916,7 +1948,7 @@ button.primary-button {
     gap: 0;
   }
   .config {
-    margin-bottom: 0;
+    margin-bottom: 40px;
     margin-top: 0;
   }
   .config .price-thumb .price .price__label {
